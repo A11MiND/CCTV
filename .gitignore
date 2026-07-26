@@ -1,0 +1,15 @@
+/node_modules/
+/dist/
+/.pnpm-store/
+/.venv-yolo/
+/models/
+/Ultralytics/
+/tmp/
+/output/
+/assets/
+/design/
+/docs/
+/scripts/
+/*.docx
+/~$*
+/public/assets/video/yolo26-retail-demo-mp4v.mp4
