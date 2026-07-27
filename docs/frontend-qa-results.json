@@ -1,0 +1,68 @@
+{
+  "tested_at": "2026-07-26T05:29:32.404Z",
+  "url": "http://127.0.0.1:4173",
+  "assertions": [
+    {
+      "name": "HTTP 200",
+      "passed": true,
+      "detail": "200"
+    },
+    {
+      "name": "頁面標題",
+      "passed": true,
+      "detail": "守望 · 零售防損｜Edcosys"
+    },
+    {
+      "name": "即時態勢可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "YOLO26 H.264 影片已載入",
+      "passed": true,
+      "detail": "{\"readyState\":4,\"width\":1280,\"height\":720}"
+    },
+    {
+      "name": "事件研判畫面可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "證據節點可跳轉影片",
+      "passed": true,
+      "detail": "7"
+    },
+    {
+      "name": "影片播放按鈕有效",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "人工處理 Toast 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "架構畫面可切換",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "手機版沒有全頁橫向溢出",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "無瀏覽器 console／page error",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "browser_errors": [],
+  "screenshots": [
+    "design/prototype-live.png",
+    "design/prototype-review.png",
+    "design/prototype-architecture.png",
+    "design/prototype-mobile.png"
+  ]
+}

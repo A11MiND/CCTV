@@ -1,0 +1,42 @@
+{
+  "run_type": "real-video person detection and tracking demo",
+  "limitation": "Not a shoplifting, criminal-intent, or identity decision.",
+  "timestamp_local": "2026-07-26 12:48:04",
+  "source": {
+    "page": "https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/",
+    "license": "https://www.pexels.com/license/",
+    "creator": "Suika Chan",
+    "input_file": "assets\\video\\pexels-hong-kong-supermarket.mp4",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30.0,
+    "frames": 341,
+    "duration_seconds": 11.367
+  },
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cuda_available": true,
+    "torch": "2.12.1+cu130",
+    "ultralytics": "8.4.106",
+    "model": "yolo26s.pt",
+    "tracker": "ByteTrack",
+    "imgsz": 640,
+    "confidence_threshold": 0.25,
+    "fp16": true
+  },
+  "result": {
+    "frames_processed": 171,
+    "output_fps": 15.0,
+    "wall_seconds": 10.923,
+    "pipeline_fps_including_render": 15.65,
+    "inference_ms_mean": 34.91,
+    "inference_ms_p50": 16.66,
+    "inference_ms_p95": 32.91,
+    "persons_per_frame_mean": 10.75,
+    "persons_per_frame_max": 14,
+    "unique_track_ids": 64,
+    "output_file": "public\\assets\\video\\yolo26-retail-demo.mp4"
+  }
+}

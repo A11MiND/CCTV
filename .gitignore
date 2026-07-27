@@ -6,10 +6,9 @@
 /Ultralytics/
 /tmp/
 /output/
-/assets/
-/design/
-/docs/
-/scripts/
 /*.docx
 /~$*
+/assets/video/pexels-busy-supermarket.mp4
+/docs/proposal-content.md
+/scripts/build_proposal.py
 /public/assets/video/yolo26-retail-demo-mp4v.mp4
