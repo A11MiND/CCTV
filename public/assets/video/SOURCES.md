@@ -19,8 +19,13 @@ The derived clip demonstrates YOLO26s person detection and ByteTrack tracking. T
 - License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 - Kaggle re-upload: https://www.kaggle.com/datasets/kipshidze/shoplifting-video-dataset
 - Derived demo: `public/assets/video/shoplifting-mil-heldout-demo.mp4`
+- YOLO26 v2 derived demo: `public/assets/video/shoplifting-yolo26-v2-demo.mp4`
 
 The derived clip adds R3D-18 temporal-classification probabilities, the fixed
 0.50 decision threshold, YOLO26s person detections, ByteTrack track IDs,
 aggregate held-out metrics, and source attribution. It is a simulated
 laboratory scenario from the public dataset.
+
+The v2 clip adds YOLO26 person/bag perception, a full-frame plus person-tube
+MViT score, the R3D-18 safety component, and the recall-first maximum risk.
+Its 93.3% result is an opened-test development benchmark.

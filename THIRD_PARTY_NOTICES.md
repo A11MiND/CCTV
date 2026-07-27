@@ -23,6 +23,15 @@ The reproducible demo script uses the separately installed `ultralytics` Python 
 
 Review the Ultralytics AGPL-3.0 and Enterprise licensing options before commercial deployment or distribution.
 
+## TorchVision video models
+
+The benchmark uses the TorchVision R3D-18 and MViT-V2-S architectures with
+official Kinetics-400 pretrained weights. The large upstream MViT weights are
+downloaded at runtime and excluded from this repository.
+
+- Project: https://github.com/pytorch/vision
+- License: BSD 3-Clause
+
 ## Web prototype dependencies
 
 The prototype uses React, React DOM, Vite, and the Vite React plugin. Their exact resolved versions are recorded in `pnpm-lock.yaml`. License texts remain with the respective packages installed through the package manager.
@@ -41,6 +50,11 @@ The benchmark demo and reported metrics use:
 Dataset files and pretrained model weights are excluded from this repository.
 The derived benchmark video adds model probabilities, YOLO26s person boxes,
 ByteTrack IDs, evaluation context, and attribution.
+
+Derived files:
+
+- `public/assets/video/shoplifting-mil-heldout-demo.mp4`
+- `public/assets/video/shoplifting-yolo26-v2-demo.mp4`
 
 ## Other referenced public datasets
 

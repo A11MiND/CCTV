@@ -1,0 +1,529 @@
+{
+  "schema_version": 1,
+  "script_version": "1.1.0",
+  "created_at_utc": "2026-07-27T16:02:37.165848+00:00",
+  "author": "Edcosys",
+  "selection_rule": "final_risk_i = max(r3d18_mil_probability_i, yolo26_mvit_mil_probability_i)",
+  "fixed_threshold": 0.5,
+  "test_status": "opened development benchmark",
+  "splits": {
+    "train": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 113,
+      "normal_support": 58,
+      "shoplifting_support": 55,
+      "accuracy": 0.9734513274336283,
+      "balanced_accuracy": 0.9741379310344828,
+      "precision": 0.9482758620689655,
+      "recall": 1.0,
+      "specificity": 0.9482758620689655,
+      "f1": 0.9734513274336283,
+      "roc_auc": 0.9943573667711598,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            55,
+            3
+          ],
+          [
+            0,
+            55
+          ]
+        ],
+        "tn": 55,
+        "fp": 3,
+        "fn": 0,
+        "tp": 55
+      }
+    },
+    "val": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 18,
+      "normal_support": 8,
+      "shoplifting_support": 10,
+      "accuracy": 0.8888888888888888,
+      "balanced_accuracy": 0.875,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "specificity": 0.75,
+      "f1": 0.9090909090909091,
+      "roc_auc": 0.925,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            6,
+            2
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        "tn": 6,
+        "fp": 2,
+        "fn": 0,
+        "tp": 10
+      }
+    },
+    "test": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 30,
+      "normal_support": 10,
+      "shoplifting_support": 20,
+      "accuracy": 0.9333333333333333,
+      "balanced_accuracy": 0.9,
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "specificity": 0.8,
+      "f1": 0.9523809523809523,
+      "roc_auc": 0.945,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            8,
+            2
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        "tn": 8,
+        "fp": 2,
+        "fn": 0,
+        "tp": 20
+      },
+      "bootstrap_95_ci": {
+        "accuracy": [
+          0.8333333333333334,
+          1.0
+        ],
+        "balanced_accuracy": [
+          0.75,
+          1.0
+        ],
+        "precision": [
+          0.8,
+          1.0
+        ],
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "specificity": [
+          0.5,
+          1.0
+        ],
+        "f1": [
+          0.888888888888889,
+          1.0
+        ],
+        "roc_auc": [
+          0.825,
+          1.0
+        ]
+      },
+      "bootstrap_iterations": 4000,
+      "bootstrap_method": "class-stratified percentile interval",
+      "wilson_95_ci": {
+        "accuracy": [
+          0.7867654163738308,
+          0.9815229762087295
+        ],
+        "precision": [
+          0.7218505315839417,
+          0.9747045710090046
+        ],
+        "recall": [
+          0.8388748419471806,
+          1.0
+        ],
+        "specificity": [
+          0.49016247153664183,
+          0.9433178485456247
+        ]
+      },
+      "wilson_method": "two-sided 95% Wilson score interval at source-video level"
+    }
+  },
+  "component_comparison": {
+    "train": {
+      "r3d18_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 113,
+        "normal_support": 58,
+        "shoplifting_support": 55,
+        "accuracy": 0.9469026548672567,
+        "balanced_accuracy": 0.9468652037617555,
+        "precision": 0.9454545454545454,
+        "recall": 0.9454545454545454,
+        "specificity": 0.9482758620689655,
+        "f1": 0.9454545454545454,
+        "roc_auc": 0.983385579937304,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              55,
+              3
+            ],
+            [
+              3,
+              52
+            ]
+          ],
+          "tn": 55,
+          "fp": 3,
+          "fn": 3,
+          "tp": 52
+        }
+      },
+      "yolo26_mvit_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 113,
+        "normal_support": 58,
+        "shoplifting_support": 55,
+        "accuracy": 0.9734513274336283,
+        "balanced_accuracy": 0.9741379310344828,
+        "precision": 0.9482758620689655,
+        "recall": 1.0,
+        "specificity": 0.9482758620689655,
+        "f1": 0.9734513274336283,
+        "roc_auc": 0.993103448275862,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              55,
+              3
+            ],
+            [
+              0,
+              55
+            ]
+          ],
+          "tn": 55,
+          "fp": 3,
+          "fn": 0,
+          "tp": 55
+        }
+      },
+      "recall_first_or_ensemble": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 113,
+        "normal_support": 58,
+        "shoplifting_support": 55,
+        "accuracy": 0.9734513274336283,
+        "balanced_accuracy": 0.9741379310344828,
+        "precision": 0.9482758620689655,
+        "recall": 1.0,
+        "specificity": 0.9482758620689655,
+        "f1": 0.9734513274336283,
+        "roc_auc": 0.9943573667711598,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              55,
+              3
+            ],
+            [
+              0,
+              55
+            ]
+          ],
+          "tn": 55,
+          "fp": 3,
+          "fn": 0,
+          "tp": 55
+        }
+      }
+    },
+    "val": {
+      "r3d18_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 18,
+        "normal_support": 8,
+        "shoplifting_support": 10,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.675,
+        "precision": 0.75,
+        "recall": 0.6,
+        "specificity": 0.75,
+        "f1": 0.6666666666666665,
+        "roc_auc": 0.7,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              6,
+              2
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "tn": 6,
+          "fp": 2,
+          "fn": 4,
+          "tp": 6
+        }
+      },
+      "yolo26_mvit_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 18,
+        "normal_support": 8,
+        "shoplifting_support": 10,
+        "accuracy": 0.8888888888888888,
+        "balanced_accuracy": 0.9,
+        "precision": 1.0,
+        "recall": 0.8,
+        "specificity": 1.0,
+        "f1": 0.888888888888889,
+        "roc_auc": 0.9375,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              8,
+              0
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          "tn": 8,
+          "fp": 0,
+          "fn": 2,
+          "tp": 8
+        }
+      },
+      "recall_first_or_ensemble": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 18,
+        "normal_support": 8,
+        "shoplifting_support": 10,
+        "accuracy": 0.8888888888888888,
+        "balanced_accuracy": 0.875,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "specificity": 0.75,
+        "f1": 0.9090909090909091,
+        "roc_auc": 0.925,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              6,
+              2
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          "tn": 6,
+          "fp": 2,
+          "fn": 0,
+          "tp": 10
+        }
+      }
+    },
+    "test": {
+      "r3d18_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 30,
+        "normal_support": 10,
+        "shoplifting_support": 20,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.775,
+        "precision": 0.9285714285714286,
+        "recall": 0.65,
+        "specificity": 0.9,
+        "f1": 0.7647058823529412,
+        "roc_auc": 0.915,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              9,
+              1
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          "tn": 9,
+          "fp": 1,
+          "fn": 7,
+          "tp": 13
+        }
+      },
+      "yolo26_mvit_mil": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 30,
+        "normal_support": 10,
+        "shoplifting_support": 20,
+        "accuracy": 0.7666666666666667,
+        "balanced_accuracy": 0.775,
+        "precision": 0.8823529411764706,
+        "recall": 0.75,
+        "specificity": 0.8,
+        "f1": 0.8108108108108107,
+        "roc_auc": 0.855,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              8,
+              2
+            ],
+            [
+              5,
+              15
+            ]
+          ],
+          "tn": 8,
+          "fp": 2,
+          "fn": 5,
+          "tp": 15
+        }
+      },
+      "recall_first_or_ensemble": {
+        "unit": "source_video",
+        "threshold": 0.5,
+        "support": 30,
+        "normal_support": 10,
+        "shoplifting_support": 20,
+        "accuracy": 0.9333333333333333,
+        "balanced_accuracy": 0.9,
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "specificity": 0.8,
+        "f1": 0.9523809523809523,
+        "roc_auc": 0.945,
+        "confusion_matrix": {
+          "labels": [
+            "Normal",
+            "Shoplifting"
+          ],
+          "values": [
+            [
+              8,
+              2
+            ],
+            [
+              0,
+              20
+            ]
+          ],
+          "tn": 8,
+          "fp": 2,
+          "fn": 0,
+          "tp": 20
+        },
+        "bootstrap_95_ci": {
+          "accuracy": [
+            0.8333333333333334,
+            1.0
+          ],
+          "balanced_accuracy": [
+            0.75,
+            1.0
+          ],
+          "precision": [
+            0.8,
+            1.0
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "specificity": [
+            0.5,
+            1.0
+          ],
+          "f1": [
+            0.888888888888889,
+            1.0
+          ],
+          "roc_auc": [
+            0.825,
+            1.0
+          ]
+        },
+        "bootstrap_iterations": 4000,
+        "bootstrap_method": "class-stratified percentile interval",
+        "wilson_95_ci": {
+          "accuracy": [
+            0.7867654163738308,
+            0.9815229762087295
+          ],
+          "precision": [
+            0.7218505315839417,
+            0.9747045710090046
+          ],
+          "recall": [
+            0.8388748419471806,
+            1.0
+          ],
+          "specificity": [
+            0.49016247153664183,
+            0.9433178485456247
+          ]
+        },
+        "wilson_method": "two-sided 95% Wilson score interval at source-video level"
+      }
+    }
+  }
+}

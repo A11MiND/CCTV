@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "script_version": "1.0.0",
+  "created_at_utc": "2026-07-27T15:48:31.328155+00:00",
+  "command": "evaluate",
+  "test_accessed": true,
+  "included_splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "selection_scope": "validation split only during training",
+  "selected_view": "dual",
+  "selected_fusion": "gated",
+  "selected_pooling": "logsumexp",
+  "fixed_threshold": 0.5,
+  "yolo_model": "P:\\CCTV\\models\\yolo26s.pt",
+  "yolo_sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+  "metrics": {
+    "train": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 113,
+      "normal_support": 58,
+      "shoplifting_support": 55,
+      "accuracy": 0.9734513274336283,
+      "balanced_accuracy": 0.9741379310344828,
+      "precision": 0.9482758620689655,
+      "recall": 1.0,
+      "specificity": 0.9482758620689655,
+      "f1": 0.9734513274336283,
+      "roc_auc": 0.993103448275862,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            55,
+            3
+          ],
+          [
+            0,
+            55
+          ]
+        ],
+        "tn": 55,
+        "fp": 3,
+        "fn": 0,
+        "tp": 55
+      }
+    },
+    "val": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 18,
+      "normal_support": 8,
+      "shoplifting_support": 10,
+      "accuracy": 0.8888888888888888,
+      "balanced_accuracy": 0.9,
+      "precision": 1.0,
+      "recall": 0.8,
+      "specificity": 1.0,
+      "f1": 0.888888888888889,
+      "roc_auc": 0.9375,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            8,
+            0
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "tn": 8,
+        "fp": 0,
+        "fn": 2,
+        "tp": 8
+      }
+    },
+    "test": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 30,
+      "normal_support": 10,
+      "shoplifting_support": 20,
+      "accuracy": 0.7666666666666667,
+      "balanced_accuracy": 0.775,
+      "precision": 0.8823529411764706,
+      "recall": 0.75,
+      "specificity": 0.8,
+      "f1": 0.8108108108108107,
+      "roc_auc": 0.855,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            8,
+            2
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "tn": 8,
+        "fp": 2,
+        "fn": 5,
+        "tp": 15
+      }
+    }
+  },
+  "crop_fallback_statistics": {
+    "total_clips": 3381,
+    "person_detected_clips": 3322,
+    "fallback_full_frame_clips": 59,
+    "fallback_rate": 0.017450458444247263,
+    "accessory_union_clips": 826,
+    "by_split": {
+      "test": {
+        "videos": 30,
+        "total_clips": 630,
+        "person_detected_clips": 622,
+        "fallback_full_frame_clips": 8,
+        "fallback_rate": 0.012698412698412698,
+        "accessory_union_clips": 236
+      },
+      "train": {
+        "videos": 113,
+        "total_clips": 2373,
+        "person_detected_clips": 2337,
+        "fallback_full_frame_clips": 36,
+        "fallback_rate": 0.015170670037926675,
+        "accessory_union_clips": 548
+      },
+      "val": {
+        "videos": 18,
+        "total_clips": 378,
+        "person_detected_clips": 363,
+        "fallback_full_frame_clips": 15,
+        "fallback_rate": 0.03968253968253968,
+        "accessory_union_clips": 42
+      }
+    }
+  },
+  "caches": {
+    "full": "P:\\CCTV\\data\\cache\\mvit-v2-s-dense-21-embeddings.npz",
+    "crop": "P:\\CCTV\\data\\cache\\yolo26s-mvit-v2-s-person-tube-21-embeddings.npz",
+    "full_reused": false,
+    "crop_reused": false
+  },
+  "checkpoint": "P:\\CCTV\\output\\shoplifting-yolo-mvit-experiment\\checkpoint.pt"
+}

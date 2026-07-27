@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "script_version": "1.1.0",
+  "created_at_utc": "2026-07-27T16:02:37.165848+00:00",
+  "author": "Edcosys",
+  "objective": "CCTV recall-first shoplifting risk ensemble",
+  "rule_formula": "final_risk_i = max(r3d18_mil_probability_i, yolo26_mvit_mil_probability_i)",
+  "rule_reason": "CCTV recall-first OR ensemble: alert when either temporal risk component crosses the fixed 0.50 threshold",
+  "aggregation": "elementwise maximum of aligned source-video probabilities",
+  "fixed_threshold": 0.5,
+  "threshold_tuned": false,
+  "component_weight_tuned": false,
+  "included_splits": [
+    "train",
+    "val",
+    "test"
+  ],
+  "test_accessed_this_round": true,
+  "test_status": "opened development benchmark",
+  "bootstrap_iterations": 4000,
+  "bootstrap_seed": 20260727,
+  "bootstrap_method": "class-stratified percentile interval",
+  "wilson_method": "two-sided 95% Wilson score interval at source-video level",
+  "input_paths": {
+    "r3d_predictions": "P:\\CCTV\\docs\\results\\shoplifting\\predictions.json",
+    "r3d_metrics": "P:\\CCTV\\docs\\results\\shoplifting\\metrics.json",
+    "yolo_mvit_predictions": "P:\\CCTV\\docs\\results\\shoplifting-yolo26-v2\\yolo-mvit-predictions.json",
+    "yolo_mvit_summary": "P:\\CCTV\\docs\\results\\shoplifting-yolo26-v2\\yolo-mvit-summary.json",
+    "yolo_mvit_checkpoint": "P:\\CCTV\\docs\\results\\shoplifting-yolo26-v2\\yolo-mvit-checkpoint.pt",
+    "r3d_checkpoint": "P:\\CCTV\\docs\\results\\shoplifting\\checkpoint.pt"
+  },
+  "input_sha256": {
+    "r3d_predictions": "f9060f05cd41a35a946eff82d5cf5d8fcef3d497b937d31a2d9251f1eb64892e",
+    "r3d_metrics": "a196f4c73dc9f51141f58d7678764688a5a73150d8c9798613b6322665e68d44",
+    "yolo_mvit_predictions": "d725bf0bf71eddb64dcf581211029ee90ca65afb73701a9600f1a6cba57db6d2",
+    "yolo_mvit_summary": "9c9cf7030fa8b30693e917a26774e3a3359f6cd6d7eb9acf420e80499d3029df",
+    "yolo_mvit_checkpoint": "a4853852eeeae618f537bc17d73d82961281db3cbf5461f83ffcdb1a0c60e1c4",
+    "r3d_checkpoint": "9924efd1a4c4599857544fdfcbdc0c41a4ae7b3c139c60ec2508dde90b76aba2"
+  },
+  "component_configuration": {
+    "r3d18_mil": {
+      "probability_field": "shoplifting_probability",
+      "checkpoint": "../shoplifting/checkpoint.pt"
+    },
+    "yolo26_mvit_mil": {
+      "probability_field": "shoplifting_probability",
+      "selected_view": "dual",
+      "selected_fusion": "gated",
+      "selected_pooling": "logsumexp",
+      "yolo_sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+      "checkpoint": "yolo-mvit-checkpoint.pt"
+    }
+  },
+  "preserved_prediction_fields": [
+    "both component probabilities",
+    "both component clip scores",
+    "R3D clip fractions and top-2 indices",
+    "YOLO-MViT clip starts, crop boxes, person detections, and bag unions",
+    "dominant component and final risk"
+  ]
+}
