@@ -1,54 +1,122 @@
-# Edcosys 零售 CCTV 疑似盜竊風險偵測 Prototype
+# Edcosys CCTV Retail Loss Prevention Prototype
 
 Author: Edcosys
 
-這個工作區包含一份繁體中文 Proposal、兩個可操作 UI 流程、以真實超市影片在本機 NVIDIA RTX 4060 Laptop GPU 執行的 YOLO26s＋ByteTrack 感知 Demo，以及完整的來源、指標與重跑腳本。
+This repository contains an interactive retail loss-prevention prototype, a real-video YOLO26s + ByteTrack GPU demo, UI screenshots, architecture diagrams, reproducible scripts, validation evidence, and an English implementation proposal.
 
-## 主要交付物
+![Live operations prototype](design/prototype-live.png)
 
-- `Edcosys_智能零售防損系統_Proposal.docx`：可編輯正式 Proposal。
-- `output/pdf/Edcosys_智能零售防損系統_Proposal.pdf`：已逐頁驗收的 PDF。
-- `src/`：React／Vite 互動 Prototype。
-- `public/assets/video/yolo26-retail-demo.mp4`：真實超市影片的 YOLO26 人員偵測與 ByteTrack 追蹤結果。
-- `assets/video/yolo26-run-metrics.json`：本機 GPU 實測設定與指標。
-- `scripts/run_yolo_retail_demo.py`：可重現的本機推論腳本。
-- `docs/proposal-content.md`：Proposal 的繁體中文可追蹤內容。
-- `docs/frontend-qa-results.json`：前端自動化驗收結果。
-- `docs/fidelity-ledger.md`：真實、推論及模擬內容的邊界。
+## Deliverables
 
-## 啟動互動 Prototype
+| Deliverable | Path |
+|---|---|
+| English proposal — editable Word file | `Edcosys_CCTV_Retail_Loss_Prevention_Proposal_EN.docx` |
+| English proposal — reviewed PDF | `Edcosys_CCTV_Retail_Loss_Prevention_Proposal_EN.pdf` |
+| Interactive React/Vite prototype | `src/` |
+| Live operations screenshot | `design/prototype-live.png` |
+| Event review screenshot | `design/prototype-review.png` |
+| Architecture screenshot | `design/prototype-architecture.png` |
+| Mobile screenshot | `design/prototype-mobile.png` |
+| Real-video YOLO26 demo | `public/assets/video/yolo26-retail-demo.mp4` |
+| Local GPU metrics | `assets/video/yolo26-run-metrics.json` |
+| Reproducible inference script | `scripts/run_yolo_retail_demo.py` |
+| English architecture diagrams | `docs/diagrams/en/` |
+| Frontend QA results | `docs/frontend-qa-results.json` |
+
+## Prototype
 
 ```powershell
 pnpm install
 pnpm run dev
 ```
 
-瀏覽 `http://127.0.0.1:5173`。若要檢查正式建置：
+Open `http://127.0.0.1:5173`.
+
+Production build and preview:
 
 ```powershell
 pnpm run build
 pnpm run preview -- --port 4173
 ```
 
-## 重跑 YOLO26 真實影片 Demo
+The prototype provides:
 
-既有 `.venv-yolo` 已包含本機執行時所需套件：
+- live camera operations;
+- event triage and short evidence playback;
+- structured reviewer decisions and notes;
+- camera and model version metadata;
+- a sidecar integration view for an existing NVR;
+- desktop and mobile layouts.
+
+![Event review prototype](design/prototype-review.png)
+
+## Real-video YOLO26 GPU demo
+
+The recorded run used:
+
+- NVIDIA GeForce RTX 4060 Laptop GPU;
+- YOLO26s person detection;
+- ByteTrack multi-object tracking;
+- CUDA FP16 inference at 640-pixel input;
+- 171 processed frames at 15 FPS output;
+- 16.66 ms p50 and 32.91 ms p95 measured inference latency;
+- 15.65 FPS complete processing pipeline including decode, resize, inference, tracking, drawing, and intermediate video writing.
+
+Run the demo:
 
 ```powershell
 .\.venv-yolo\Scripts\python.exe .\scripts\run_yolo_retail_demo.py
 ```
 
-預設輸入為 `assets/video/pexels-hong-kong-supermarket.mp4`，輸出為 `public/assets/video/yolo26-retail-demo.mp4`。
+The script reads `assets/video/pexels-hong-kong-supermarket.mp4` and writes `public/assets/video/yolo26-retail-demo.mp4`.
 
-素材來自 Pexels 的 Suika Chan「Customers Shopping at Supermarket」實拍影片，來源與授權：
+This run measures person detection, tracking, rendering, and local GPU throughput. Shoplifting event accuracy requires labeled action sequences and a store acceptance set.
 
-- https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/
-- https://www.pexels.com/license/
+## Proposed model pipeline
 
-## 正確解讀
+![YOLO26 perception and event network](docs/diagrams/en/03-model-network-en.png)
 
-這次本機實測證明的是「真實影片可在本機 GPU 完成人員偵測、追蹤及 UI 播放」，不是 shoplifting accuracy test。原片沒有盜竊 ground truth，也不是固定高位 CCTV；介面中的 92%、事件編號、取物／停留／靠近衣袋／未放回等證據鏈均清楚標示為產品流程模擬。系統不應由影像推斷身份、犯罪意圖或是否已犯罪，正式試點必須採 human-in-the-loop。
+1. Ingest an authorized RTSP substream.
+2. Detect people, relevant objects, and optional pose keypoints with YOLO26.
+3. Maintain per-camera tracks with ByteTrack or BoT-SORT.
+4. Compute track-level zone, dwell, hand–shelf distance, motion, and interaction features.
+5. Score short sequences with a temporal model and camera-specific rules.
+6. Create an evidence clip and reason codes.
+7. Send the event to staff review.
+8. Store reviewer feedback for calibration and controlled model updates.
 
-## 建議下一步
+## Dataset strategy
 
-先以 1 店、2–4 個高損耗區鏡頭進行 10–14 週分段試點；驗證 RTSP／ONVIF、像素與遮擋條件，收集連續正常時段、受控演練與合法取得的已確認事件，最後以事件級召回、每鏡頭每小時誤報、P95 提示延遲及人工覆核時間決定 Go／Conditional Go／No-Go。
+The public-data plan combines:
+
+- the [Shoplifting Video Dataset](https://www.kaggle.com/datasets/kipshidze/shoplifting-video-dataset) for an initial two-class temporal classifier and pipeline tests;
+- RetailAction for person–shelf–item interaction;
+- PoseLift for pose, tracks, boxes, and frame-level retail actions;
+- UCF-Crime and DCSASS for broader anomaly baselines;
+- store-specific continuous normal video, controlled events, hard negatives, and a frozen acceptance set.
+
+The Kaggle Shoplifting Video Dataset is a re-upload of [Mendeley Data DOI 10.17632/r3yjf35hzr.1](https://data.mendeley.com/datasets/r3yjf35hzr/1). It uses CC BY 4.0, 640×480 video at 30 FPS, and clip-level `Normal` / `Shoplifting` labels. Training and evaluation splits should separate actors, recording sessions, and backgrounds.
+
+## Existing CCTV integration
+
+![Sidecar integration](docs/diagrams/en/02-sidecar-architecture-en.png)
+
+The proposed pilot keeps the existing NVR recording path. An Edcosys edge sidecar reads approved camera substreams, runs the vision pipeline, buffers short clips, and sends reviewable events to the operations UI.
+
+Recommended first deployment:
+
+- one store;
+- 2–4 high-loss camera views;
+- 10–14 weeks;
+- read-only sidecar integration;
+- shadow-mode measurement before operational alerts;
+- KPI gate based on event recall, false alerts per camera-hour, latency, uptime, and reviewer workload.
+
+## Video source
+
+The real supermarket footage was created by Suika Chan and published on Pexels:
+
+- [Customers Shopping at Supermarket](https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/)
+- [Pexels license](https://www.pexels.com/license/)
+
+The source footage shows ordinary supermarket customers. The interface event sequence is a workflow simulation. Full source notes are in `public/assets/video/SOURCES.md`.

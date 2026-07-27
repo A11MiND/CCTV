@@ -8,6 +8,17 @@
 /output/
 /*.docx
 /~$*
+/.env
+/.env.*
+!/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
 /assets/video/pexels-busy-supermarket.mp4
 /docs/proposal-content.md
 /scripts/build_proposal.py

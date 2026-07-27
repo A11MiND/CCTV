@@ -1,11 +1,11 @@
-# Demo 影片來源
+# Demo Video Sources
 
-## 香港超市實拍
+## Hong Kong Supermarket Footage
 
-- 頁面：https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/
-- 作者：Suika Chan
-- 授權：https://www.pexels.com/license/
-- 本機來源：`assets/video/pexels-hong-kong-supermarket.mp4`
-- 衍生 Demo：`public/assets/video/yolo26-retail-demo.mp4`
+- Source page: https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/
+- Creator: Suika Chan
+- License: https://www.pexels.com/license/
+- Local source: `assets/video/pexels-hong-kong-supermarket.mp4`
+- Derived demo: `public/assets/video/yolo26-retail-demo.mp4`
 
-衍生影片只示範 YOLO26s 人員偵測與 ByteTrack 追蹤，不表示片中任何人物涉及盜竊或其他不當行為。
+The derived clip demonstrates YOLO26s person detection and ByteTrack tracking. The people in the source footage are ordinary supermarket customers. The interface event sequence is a product-workflow simulation.
