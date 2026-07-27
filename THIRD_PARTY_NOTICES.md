@@ -27,12 +27,25 @@ Review the Ultralytics AGPL-3.0 and Enterprise licensing options before commerci
 
 The prototype uses React, React DOM, Vite, and the Vite React plugin. Their exact resolved versions are recorded in `pnpm-lock.yaml`. License texts remain with the respective packages installed through the package manager.
 
-## Referenced public datasets
+## Shoplifting benchmark dataset
 
-Public datasets discussed in the proposal are referenced for evaluation and development planning. Dataset files are excluded from this repository. Each download and derivative model must follow the source dataset terms.
+The benchmark demo and reported metrics use:
 
-- Shoplifting Dataset, MNNIT Allahabad — CC BY 4.0: https://data.mendeley.com/datasets/r3yjf35hzr/1
+- Title: Shoplifting Dataset (2022) - CV Laboratory MNNIT Allahabad
+- Creators: Mohd. Aquib Ansari and Dushyant Kumar Singh
+- Source: https://data.mendeley.com/datasets/r3yjf35hzr/1
+- DOI: https://doi.org/10.17632/r3yjf35hzr.1
+- License: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/
 - Kaggle re-upload: https://www.kaggle.com/datasets/kipshidze/shoplifting-video-dataset
+
+Dataset files and pretrained model weights are excluded from this repository.
+The derived benchmark video adds model probabilities, YOLO26s person boxes,
+ByteTrack IDs, evaluation context, and attribution.
+
+## Other referenced public datasets
+
+Public datasets discussed in the proposal are referenced for evaluation and development planning. Each download and derivative model must follow the source dataset terms.
+
 - RetailAction: https://huggingface.co/datasets/standard-cognition/RetailAction
 - PoseLift: https://github.com/TeCSAR-UNCC/PoseLift
 - UCF-Crime: https://www.crcv.ucf.edu/research/real-world-anomaly-detection-in-surveillance-videos/

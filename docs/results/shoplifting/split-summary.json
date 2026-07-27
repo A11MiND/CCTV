@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "dataset": "MNNIT Allahabad Shoplifting Dataset, DOI 10.17632/r3yjf35hzr.1",
+  "review_unit": "source video",
+  "total_videos": 182,
+  "split_counts": {
+    "train": {
+      "normal": 58,
+      "shoplifting": 55,
+      "total": 113
+    },
+    "val": {
+      "normal": 8,
+      "shoplifting": 10,
+      "total": 18
+    },
+    "test": {
+      "normal": 10,
+      "shoplifting": 20,
+      "total": 30
+    },
+    "ood": {
+      "normal": 2,
+      "shoplifting": 6,
+      "total": 8
+    },
+    "qualitative": {
+      "normal": 0,
+      "shoplifting": 1,
+      "total": 1
+    },
+    "excluded": {
+      "normal": 12,
+      "shoplifting": 0,
+      "total": 12
+    }
+  },
+  "method": "Manual primary-actor/clothing and connected-session grouping, exact SHA-256 duplicate quarantine, and a locked high-resolution scene holdout",
+  "limitations": [
+    "The source dataset does not provide actor or session identifiers.",
+    "The low-resolution core retains the same laboratory and recurring bystanders.",
+    "The OOD split has only two Normal and six Shoplifting clips."
+  ]
+}

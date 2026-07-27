@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "script_version": "1.0.0",
+  "created_at_utc": "2026-07-27T14:50:35.832547+00:00",
+  "reporting_unit": "source_video",
+  "fixed_threshold": 0.5,
+  "video_logit": "mean of top-2 clip logits",
+  "ensemble": "mean of five seed video probabilities",
+  "model_selection": "validation balanced_accuracy + 0.05 * validation ROC-AUC only",
+  "splits": {
+    "train": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 113,
+      "normal_support": 58,
+      "shoplifting_support": 55,
+      "accuracy": 0.9469026548672567,
+      "balanced_accuracy": 0.9468652037617555,
+      "precision": 0.9454545454545454,
+      "recall": 0.9454545454545454,
+      "specificity": 0.9482758620689655,
+      "f1": 0.9454545454545454,
+      "roc_auc": 0.983385579937304,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            55,
+            3
+          ],
+          [
+            3,
+            52
+          ]
+        ],
+        "tn": 55,
+        "fp": 3,
+        "fn": 3,
+        "tp": 52
+      }
+    },
+    "val": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 18,
+      "normal_support": 8,
+      "shoplifting_support": 10,
+      "accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.675,
+      "precision": 0.75,
+      "recall": 0.6,
+      "specificity": 0.75,
+      "f1": 0.6666666666666665,
+      "roc_auc": 0.7,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            6,
+            2
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "tn": 6,
+        "fp": 2,
+        "fn": 4,
+        "tp": 6
+      }
+    },
+    "test": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 30,
+      "normal_support": 10,
+      "shoplifting_support": 20,
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.775,
+      "precision": 0.9285714285714286,
+      "recall": 0.65,
+      "specificity": 0.9,
+      "f1": 0.7647058823529412,
+      "roc_auc": 0.915,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            9,
+            1
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "tn": 9,
+        "fp": 1,
+        "fn": 7,
+        "tp": 13
+      },
+      "bootstrap_95_ci": {
+        "accuracy": [
+          0.5666666666666667,
+          0.8666666666666667
+        ],
+        "balanced_accuracy": [
+          0.625,
+          0.9
+        ],
+        "precision": [
+          0.7857142857142857,
+          1.0
+        ],
+        "recall": [
+          0.45,
+          0.85
+        ],
+        "specificity": [
+          0.7,
+          1.0
+        ],
+        "f1": [
+          0.5806451612903226,
+          0.8947368421052632
+        ],
+        "roc_auc": [
+          0.79,
+          0.995
+        ]
+      },
+      "bootstrap_iterations": 4000,
+      "bootstrap_method": "class-stratified percentile interval"
+    },
+    "ood": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 8,
+      "normal_support": 2,
+      "shoplifting_support": 6,
+      "accuracy": 0.75,
+      "balanced_accuracy": 0.6666666666666667,
+      "precision": 0.8333333333333334,
+      "recall": 0.8333333333333334,
+      "specificity": 0.5,
+      "f1": 0.8333333333333334,
+      "roc_auc": 0.75,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "tn": 1,
+        "fp": 1,
+        "fn": 1,
+        "tp": 5
+      },
+      "bootstrap_95_ci": {
+        "accuracy": [
+          0.5,
+          1.0
+        ],
+        "balanced_accuracy": [
+          0.3333333333333333,
+          1.0
+        ],
+        "precision": [
+          0.6666666666666666,
+          1.0
+        ],
+        "recall": [
+          0.5,
+          1.0
+        ],
+        "specificity": [
+          0.0,
+          1.0
+        ],
+        "f1": [
+          0.6,
+          1.0
+        ],
+        "roc_auc": [
+          0.16666666666666666,
+          1.0
+        ]
+      },
+      "bootstrap_iterations": 4000,
+      "bootstrap_method": "class-stratified percentile interval"
+    },
+    "qualitative": {
+      "unit": "source_video",
+      "threshold": 0.5,
+      "support": 1,
+      "normal_support": 0,
+      "shoplifting_support": 1,
+      "accuracy": 0.0,
+      "balanced_accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 0.0,
+      "f1": 0.0,
+      "roc_auc": null,
+      "confusion_matrix": {
+        "labels": [
+          "Normal",
+          "Shoplifting"
+        ],
+        "values": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "tp": 0
+      }
+    }
+  }
+}

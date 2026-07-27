@@ -1,0 +1,183 @@
+relative_path,split,actor_group,reason
+normal/normal-1.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-2.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-3.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-4.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-5.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-6.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-7.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-8.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-9.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-10.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-11.mp4,train,E_older_plaid,Older plaid-shirt actor; normal-only group
+normal/normal-12.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-13.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-14.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+normal/normal-15.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+normal/normal-16.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+normal/normal-17.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-18.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-19.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-20.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-21.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-22.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-23.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+normal/normal-24.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-25.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-26.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-27.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-28.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-29.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-30.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+normal/normal-31.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+normal/normal-32.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+normal/normal-33.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+normal/normal-34.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+normal/normal-35.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+normal/normal-36.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+normal/normal-37.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+normal/normal-38.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+normal/normal-39.mp4,excluded,excluded_context,Context/background-only or unsuitable active-person evidence
+normal/normal-40.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+normal/normal-41.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+normal/normal-42.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+normal/normal-43.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+normal/normal-44.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-45.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-46.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-47.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-48.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-49.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-50.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-51.mp4,excluded,excluded_exact_duplicate,"Bit-identical duplicate; retained sources are N50, N44, and N55"
+normal/normal-52.mp4,excluded,excluded_exact_duplicate,"Bit-identical duplicate; retained sources are N50, N44, and N55"
+normal/normal-53.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+normal/normal-54.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-55.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-56.mp4,excluded,excluded_exact_duplicate,"Bit-identical duplicate; retained sources are N50, N44, and N55"
+normal/normal-57.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-58.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-59.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-60.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-61.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-62.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-63.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-64.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+normal/normal-65.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-66.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-67.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-68.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-69.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+normal/normal-70.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-71.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-72.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-73.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-74.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-75.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-76.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-77.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-78.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-79.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-80.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-81.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-82.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-83.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-84.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+normal/normal-85.mp4,train,E_older_plaid,Older plaid-shirt actor; normal-only group
+normal/normal-86.mp4,train,E_older_plaid,Older plaid-shirt actor; normal-only group
+normal/normal-87.mp4,excluded,excluded_cross_group,Multiple primary actors cross the reviewed train/test groups
+normal/normal-88.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+normal/normal-89.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+normal/normal-90.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-1.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-2.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-3.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+shoplifting/shoplifting-4.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-5.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-6.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-7.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-8.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-9.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-10.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-11.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-12.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-13.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-14.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-15.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-16.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-17.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-18.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-19.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-20.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-21.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-22.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-23.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-24.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-25.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-26.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-27.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-28.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-29.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-30.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-31.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-32.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+shoplifting/shoplifting-33.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+shoplifting/shoplifting-34.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+shoplifting/shoplifting-35.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+shoplifting/shoplifting-36.mp4,test,F_gray_backpack,Primary gray-plaid/backpack actor
+shoplifting/shoplifting-37.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-38.mp4,val,H_navy_cap,Primary navy-cap actor and connected takes
+shoplifting/shoplifting-39.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+shoplifting/shoplifting-40.mp4,val,G_brown_plaid,Primary brown-plaid/masked actor
+shoplifting/shoplifting-41.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-42.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-43.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-44.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-45.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-46.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-47.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-48.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-50.mp4,qualitative,qualitative_new_angle,Positive-only different computer-lab angle; qualitative probe
+shoplifting/shoplifting-51.mp4,test,IJK_connected_session,"Red, green, and blue actors co-occur in one connected session"
+shoplifting/shoplifting-52.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-53.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-54.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-55.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-56.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-57.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-58.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-59.mp4,train,A_checkered,Primary checkered-shirt actor and connected takes
+shoplifting/shoplifting-60.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-61.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-62.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-63.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-64.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-65.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-66.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-67.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-68.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-69.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-70.mp4,train,B_light_blue,Primary light-blue-shirt actor and connected takes
+shoplifting/shoplifting-71.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-72.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-73.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-74.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-75.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-76.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-77.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-78.mp4,train,C_purple,Primary purple-shirt actor and connected takes
+shoplifting/shoplifting-79.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-80.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-81.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-82.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-83.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-84.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-85.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-86.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-87.mp4,train,D_navy_stripe,Primary navy/striped-shirt actor and connected takes
+shoplifting/shoplifting-88.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-89.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-90.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-91.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-92.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection
+shoplifting/shoplifting-93.mp4,ood,HR_new_scene,Locked 1920x1080 new-scene holdout opened after model selection

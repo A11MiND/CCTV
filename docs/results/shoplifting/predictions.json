@@ -1,0 +1,5787 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-07-27T14:50:35.834555+00:00",
+  "fixed_threshold": 0.5,
+  "predictions": [
+    {
+      "relative_path": "normal/normal-1.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.01942119561135769,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.010648291558027267,
+        0.008031792938709259,
+        0.008697789162397385,
+        0.010219477117061615,
+        0.01434145774692297,
+        0.01796494983136654,
+        0.020312832668423653
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-2.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.20590107142925262,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.14788538217544556,
+        0.14140041172504425,
+        0.0699687972664833,
+        0.07105392962694168,
+        0.05012303218245506,
+        0.09567593783140182,
+        0.273794949054718
+      ],
+      "top_2_clip_indices": [
+        6,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-3.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.009721023961901665,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0038327767979353666,
+        0.0022061257623136044,
+        0.003185496898368001,
+        0.005110675934702158,
+        0.011112011037766933,
+        0.007748069707304239,
+        0.006194290239363909
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-4.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.015002083964645863,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.02224818989634514,
+        0.009525890462100506,
+        0.004148175474256277,
+        0.0031506498344242573,
+        0.003147958079352975,
+        0.003201304003596306,
+        0.0060332645662128925
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-5.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.012794101610779762,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.012736005708575249,
+        0.011628065258264542,
+        0.011227179318666458,
+        0.010710868053138256,
+        0.008965663611888885,
+        0.005475139245390892,
+        0.008185791783034801
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-6.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.02942870557308197,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.03832654282450676,
+        0.01967782713472843,
+        0.007245392072945833,
+        0.007881351746618748,
+        0.011692838743329048,
+        0.012726841494441032,
+        0.019442470744252205
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-7.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.1811567097902298,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.011825946159660816,
+        0.0730331614613533,
+        0.14301081001758575,
+        0.2184281200170517,
+        0.08762039244174957,
+        0.10867016017436981,
+        0.014929551631212234
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-8.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.030574005097150803,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.029141264036297798,
+        0.02771173045039177,
+        0.008888721466064453,
+        0.01985189877450466,
+        0.018261808902025223,
+        0.017051126807928085,
+        0.018516384065151215
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-9.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.05222979187965393,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.006927508860826492,
+        0.022688908502459526,
+        0.03389386460185051,
+        0.008986711502075195,
+        0.07375980168581009,
+        0.024685759097337723,
+        0.030274290591478348
+      ],
+      "top_2_clip_indices": [
+        4,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-10.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.0275723934173584,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.007164162117987871,
+        0.016502680256962776,
+        0.017644330859184265,
+        0.03516601771116257,
+        0.014948805794119835,
+        0.019450200721621513,
+        0.005583855789154768
+      ],
+      "top_2_clip_indices": [
+        3,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-11.mp4",
+      "split": "train",
+      "actor_group": "E_older_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.05678360536694527,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.023161781951785088,
+        0.015087870880961418,
+        0.05729200318455696,
+        0.01830417290329933,
+        0.012637331150472164,
+        0.018367180600762367,
+        0.0525486059486866
+      ],
+      "top_2_clip_indices": [
+        2,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-17.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.028218578547239304,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.012191939167678356,
+        0.018138892948627472,
+        0.02102084644138813,
+        0.024196933954954147,
+        0.028064141049981117,
+        0.022605858743190765,
+        0.017455099150538445
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "normal/normal-18.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.14471057057380676,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.13471662998199463,
+        0.10301557928323746,
+        0.06005372479557991,
+        0.03806597366929054,
+        0.05083229020237923,
+        0.06677434593439102,
+        0.15318675339221954
+      ],
+      "top_2_clip_indices": [
+        6,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-19.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.20852923393249512,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.139701709151268,
+        0.1024627611041069,
+        0.12802167236804962,
+        0.26369693875312805,
+        0.08795753866434097,
+        0.04059956967830658,
+        0.1600465178489685
+      ],
+      "top_2_clip_indices": [
+        3,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-20.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.31813275814056396,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.30997923016548157,
+        0.3251242935657501,
+        0.29632097482681274,
+        0.21273846924304962,
+        0.07259058207273483,
+        0.12315593659877777,
+        0.12856325507164001
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-21.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.7066407203674316,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.6291185617446899,
+        0.7271794080734253,
+        0.5188654065132141,
+        0.34764763712882996,
+        0.5291562676429749,
+        0.56331467628479,
+        0.6907091736793518
+      ],
+      "top_2_clip_indices": [
+        1,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-22.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.010269281454384327,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0016553733730688691,
+        0.002055784920230508,
+        0.0040361410938203335,
+        0.0032625533640384674,
+        0.004507558420300484,
+        0.007534992881119251,
+        0.012245161458849907
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-24.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.32339364290237427,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.16855846345424652,
+        0.35231080651283264,
+        0.29551076889038086,
+        0.12264057993888855,
+        0.11299927532672882,
+        0.025224903598427773,
+        0.09871923178434372
+      ],
+      "top_2_clip_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-44.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.10476275533437729,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.019581889733672142,
+        0.05239677429199219,
+        0.12034177035093307,
+        0.08813372999429703,
+        0.05085068941116333,
+        0.04189588502049446,
+        0.05236541107296944
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "normal/normal-45.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.8727580904960632,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.05328242853283882,
+        0.7248138785362244,
+        0.8575141429901123,
+        0.828008770942688,
+        0.844502866268158,
+        0.8706153631210327,
+        0.880667507648468
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-46.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.05407782644033432,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.008970537222921848,
+        0.01628405973315239,
+        0.041415758430957794,
+        0.030573902651667595,
+        0.0313757099211216,
+        0.016660306602716446,
+        0.06452387571334839
+      ],
+      "top_2_clip_indices": [
+        6,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-47.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.16967372596263885,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.05662429705262184,
+        0.1667814999818802,
+        0.1136116236448288,
+        0.17104925215244293,
+        0.08297314494848251,
+        0.07088694721460342,
+        0.07344987243413925
+      ],
+      "top_2_clip_indices": [
+        3,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-48.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.2384704351425171,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.06830184161663055,
+        0.06258054077625275,
+        0.03531862050294876,
+        0.09548752754926682,
+        0.25998520851135254,
+        0.18106460571289062,
+        0.21692653000354767
+      ],
+      "top_2_clip_indices": [
+        4,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-49.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.3601985573768616,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.3777618110179901,
+        0.1915023773908615,
+        0.31344521045684814,
+        0.34257641434669495,
+        0.2796240746974945,
+        0.18943171203136444,
+        0.09768948704004288
+      ],
+      "top_2_clip_indices": [
+        0,
+        3
+      ]
+    },
+    {
+      "relative_path": "normal/normal-50.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.28393664956092834,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.06467090547084808,
+        0.05236280336976051,
+        0.1816883087158203,
+        0.17264267802238464,
+        0.3435267210006714,
+        0.23068733513355255,
+        0.17297233641147614
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-53.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.13181059062480927,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08723872154951096,
+        0.16665320098400116,
+        0.059685464948415756,
+        0.052783235907554626,
+        0.10123243927955627,
+        0.08496271073818207,
+        0.037489842623472214
+      ],
+      "top_2_clip_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-54.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.465867280960083,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.382548451423645,
+        0.13575859367847443,
+        0.2662051022052765,
+        0.2611956298351288,
+        0.3677665591239929,
+        0.5507002472877502,
+        0.3173690736293793
+      ],
+      "top_2_clip_indices": [
+        5,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-55.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.29994258284568787,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.10632086545228958,
+        0.24275259673595428,
+        0.3629412353038788,
+        0.15088874101638794,
+        0.1337217092514038,
+        0.181610569357872,
+        0.13309483230113983
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-57.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.021809760481119156,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.012722655199468136,
+        0.010300680994987488,
+        0.005503098480403423,
+        0.008615246042609215,
+        0.01441371813416481,
+        0.031290069222450256,
+        0.005349507089704275
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-58.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.01213518250733614,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.009791034273803234,
+        0.006928931921720505,
+        0.005952984560281038,
+        0.006493324413895607,
+        0.011975392699241638,
+        0.011103269644081593,
+        0.009080878458917141
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-59.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.014160635881125927,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.010840112343430519,
+        0.013519736006855965,
+        0.008109202608466148,
+        0.004623600281774998,
+        0.013337628915905952,
+        0.007268397603183985,
+        0.003469801740720868
+      ],
+      "top_2_clip_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-60.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.005476576276123524,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.004174187313765287,
+        0.001891658641397953,
+        0.0022023010533303022,
+        0.003120079869404435,
+        0.0050932178273797035,
+        0.0041739908047020435,
+        0.004988351371139288
+      ],
+      "top_2_clip_indices": [
+        4,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-61.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.012067681178450584,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.013683839701116085,
+        0.009797461330890656,
+        0.007518277037888765,
+        0.009259588085114956,
+        0.00652675237506628,
+        0.005314659792929888,
+        0.005924280732870102
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-62.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.01946435496211052,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.013903059996664524,
+        0.017240790650248528,
+        0.012724995613098145,
+        0.019725102931261063,
+        0.0054116868413984776,
+        0.0048507144674658775,
+        0.0071257553063333035
+      ],
+      "top_2_clip_indices": [
+        3,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-63.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.00783458910882473,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.004824800882488489,
+        0.00124633451923728,
+        0.0019171241438016295,
+        0.0037049674428999424,
+        0.0076973591931164265,
+        0.003395920153707266,
+        0.0072299400344491005
+      ],
+      "top_2_clip_indices": [
+        4,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-64.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.011851063929498196,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.004022533539682627,
+        0.003660580376163125,
+        0.008770001120865345,
+        0.014032447710633278,
+        0.006139625329524279,
+        0.0047127120196819305,
+        0.0024071717634797096
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-65.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.06939061731100082,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.02283051796257496,
+        0.01840326376259327,
+        0.019925083965063095,
+        0.019065462052822113,
+        0.038817208260297775,
+        0.11110939085483551,
+        0.010388795286417007
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-66.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.05704059079289436,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.026957428082823753,
+        0.06039786338806152,
+        0.013904385268688202,
+        0.005711739882826805,
+        0.006581941153854132,
+        0.024015942588448524,
+        0.049542415887117386
+      ],
+      "top_2_clip_indices": [
+        1,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-67.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.03459208086133003,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.009366493672132492,
+        0.023772308602929115,
+        0.04231654480099678,
+        0.024911049753427505,
+        0.00900611374527216,
+        0.005749926902353764,
+        0.007644966244697571
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "normal/normal-68.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.050100378692150116,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0073358300141990185,
+        0.008115284144878387,
+        0.010826637037098408,
+        0.011881408281624317,
+        0.02002430148422718,
+        0.02865002676844597,
+        0.08341585844755173
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-69.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.7941380739212036,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.017139961943030357,
+        0.024919817224144936,
+        0.06899016350507736,
+        0.29650577902793884,
+        0.2536565661430359,
+        0.6731276512145996,
+        0.8895062804222107
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-70.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.18623211979866028,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.022195780649781227,
+        0.01733214594423771,
+        0.01578744873404503,
+        0.029169926419854164,
+        0.04586693271994591,
+        0.4310930669307709,
+        0.06287992745637894
+      ],
+      "top_2_clip_indices": [
+        5,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-71.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.09655661880970001,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.1207156553864479,
+        0.04939639940857887,
+        0.07292447984218597,
+        0.014765902422368526,
+        0.006664099637418985,
+        0.0689825639128685,
+        0.030163168907165527
+      ],
+      "top_2_clip_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-72.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.07510089129209518,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.03652125597000122,
+        0.010342023335397243,
+        0.006642150692641735,
+        0.04199414327740669,
+        0.04988134652376175,
+        0.10336227715015411,
+        0.029335467144846916
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-73.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.06300943344831467,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.016402587294578552,
+        0.04232246056199074,
+        0.017224298790097237,
+        0.049094028770923615,
+        0.07590468227863312,
+        0.022221775725483894,
+        0.04120143502950668
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "normal/normal-74.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.07579967379570007,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.05938337743282318,
+        0.08035507798194885,
+        0.028456084430217743,
+        0.05718699097633362,
+        0.06628413498401642,
+        0.013217099942266941,
+        0.012987797148525715
+      ],
+      "top_2_clip_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-75.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.03414318710565567,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.013700395822525024,
+        0.027373289689421654,
+        0.031357087194919586,
+        0.020031051710247993,
+        0.02622516267001629,
+        0.03221375122666359,
+        0.007691806647926569
+      ],
+      "top_2_clip_indices": [
+        5,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-76.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.03954993560910225,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.028495343402028084,
+        0.016834374517202377,
+        0.01826418936252594,
+        0.04692717641592026,
+        0.008187775500118732,
+        0.016499793156981468,
+        0.019921841099858284
+      ],
+      "top_2_clip_indices": [
+        3,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-77.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.022490283474326134,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.015353030525147915,
+        0.013853502459824085,
+        0.022374598309397697,
+        0.01287365797907114,
+        0.01856279745697975,
+        0.02027692273259163,
+        0.01710452325642109
+      ],
+      "top_2_clip_indices": [
+        2,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-78.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.07625339925289154,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.16259397566318512,
+        0.030384615063667297,
+        0.031072624027729034,
+        0.00814803596585989,
+        0.010660610161721706,
+        0.014265577308833599,
+        0.015161319635808468
+      ],
+      "top_2_clip_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-79.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.017647016793489456,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.007837372832000256,
+        0.008983824402093887,
+        0.009223215281963348,
+        0.020494552329182625,
+        0.012829811312258244,
+        0.00550606194883585,
+        0.008581390604376793
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-80.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.023831868544220924,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.015093850903213024,
+        0.017251133918762207,
+        0.011619223281741142,
+        0.0056628393940627575,
+        0.01376055832952261,
+        0.011047101579606533,
+        0.02764633297920227
+      ],
+      "top_2_clip_indices": [
+        6,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-81.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.03679477423429489,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.01468511763960123,
+        0.013248298317193985,
+        0.02162371575832367,
+        0.013195480220019817,
+        0.015240698121488094,
+        0.030000587925314903,
+        0.04115695506334305
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-82.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.024839485064148903,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.014567723497748375,
+        0.018963225185871124,
+        0.007568329107016325,
+        0.010551724582910538,
+        0.009432978928089142,
+        0.013183948583900928,
+        0.028615960851311684
+      ],
+      "top_2_clip_indices": [
+        6,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-83.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.018692797049880028,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.010057167150080204,
+        0.005254136398434639,
+        0.012126434594392776,
+        0.024209503084421158,
+        0.00687501672655344,
+        0.01002854760736227,
+        0.010209271684288979
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-84.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.02150697074830532,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.01887768693268299,
+        0.005624013487249613,
+        0.0067374128848314285,
+        0.012024416588246822,
+        0.008571592159569263,
+        0.015784844756126404,
+        0.021410400047898293
+      ],
+      "top_2_clip_indices": [
+        6,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-85.mp4",
+      "split": "train",
+      "actor_group": "E_older_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.0399380698800087,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.017124367877840996,
+        0.028415614739060402,
+        0.036789171397686005,
+        0.03555353358387947,
+        0.02445521205663681,
+        0.01918712444603443,
+        0.04033324122428894
+      ],
+      "top_2_clip_indices": [
+        6,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-86.mp4",
+      "split": "train",
+      "actor_group": "E_older_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.04111591354012489,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.012259121052920818,
+        0.015315363183617592,
+        0.012860163114964962,
+        0.0377742275595665,
+        0.0400765985250473,
+        0.01565871573984623,
+        0.03083350509405136
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-1.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.915213942527771,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9107438325881958,
+        0.709209680557251,
+        0.39737361669540405,
+        0.7839118242263794,
+        0.9128822088241577,
+        0.9203861951828003,
+        0.7097625136375427
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-8.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9308450818061829,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9341075420379639,
+        0.880791962146759,
+        0.7308549284934998,
+        0.8185179829597473,
+        0.9282628893852234,
+        0.9199493527412415,
+        0.9017718434333801
+      ],
+      "top_2_clip_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-9.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7389948964118958,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.705195426940918,
+        0.6534326672554016,
+        0.7674767374992371,
+        0.6906060576438904,
+        0.561079204082489,
+        0.16050994396209717,
+        0.2321334332227707
+      ],
+      "top_2_clip_indices": [
+        2,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-10.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.953538715839386,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8174887299537659,
+        0.9289925694465637,
+        0.8303990960121155,
+        0.4815313220024109,
+        0.8842554688453674,
+        0.9700117111206055,
+        0.8898831605911255
+      ],
+      "top_2_clip_indices": [
+        5,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-11.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9927953481674194,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9931326508522034,
+        0.9940352439880371,
+        0.984372615814209,
+        0.9467664361000061,
+        0.9096328020095825,
+        0.9297516345977783,
+        0.884344220161438
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-12.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9447981119155884,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7896929383277893,
+        0.955315887928009,
+        0.7097021341323853,
+        0.7283782362937927,
+        0.9321063160896301,
+        0.8820814490318298,
+        0.8628066182136536
+      ],
+      "top_2_clip_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-13.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7451686263084412,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.13288220763206482,
+        0.21145211160182953,
+        0.677943229675293,
+        0.7548595070838928,
+        0.7374250888824463,
+        0.6225920915603638,
+        0.21717160940170288
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-14.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9315146207809448,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7113696932792664,
+        0.9000840783119202,
+        0.9537337422370911,
+        0.8491576910018921,
+        0.8528151512145996,
+        0.8488384485244751,
+        0.5768197774887085
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-15.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8033708333969116,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.1532793492078781,
+        0.19110211730003357,
+        0.8277057409286499,
+        0.7795160412788391,
+        0.5081817507743835,
+        0.32056111097335815,
+        0.5448147058486938
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-16.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.83624267578125,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.6939334273338318,
+        0.6412471532821655,
+        0.7844571471214294,
+        0.5832869410514832,
+        0.833357572555542,
+        0.839637041091919,
+        0.5862566232681274
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-17.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9181049466133118,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.5383204817771912,
+        0.928204357624054,
+        0.9075503945350647,
+        0.8050203323364258,
+        0.1301337480545044,
+        0.425177663564682,
+        0.25309157371520996
+      ],
+      "top_2_clip_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-18.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.930748462677002,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7027818560600281,
+        0.5043097734451294,
+        0.8321701288223267,
+        0.9616163969039917,
+        0.800849437713623,
+        0.5591042637825012,
+        0.8800221681594849
+      ],
+      "top_2_clip_indices": [
+        3,
+        6
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-19.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9064816236495972,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.04241819679737091,
+        0.03379303961992264,
+        0.08496875315904617,
+        0.15412096679210663,
+        0.8881339430809021,
+        0.8981538414955139,
+        0.9181873202323914
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-20.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9102608561515808,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8648337721824646,
+        0.49302932620048523,
+        0.8435884118080139,
+        0.9302675127983093,
+        0.8920183777809143,
+        0.8378818035125732,
+        0.6311673521995544
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-21.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.28193777799606323,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.07144570350646973,
+        0.11472385376691818,
+        0.29425084590911865,
+        0.2697448134422302,
+        0.18964919447898865,
+        0.21209768950939178,
+        0.0427364781498909
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-22.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9816514253616333,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9242010712623596,
+        0.9674645066261292,
+        0.9903779029846191,
+        0.9456826448440552,
+        0.8543802499771118,
+        0.5865177512168884,
+        0.68149733543396
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-23.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8913968801498413,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.41250738501548767,
+        0.07674536108970642,
+        0.274819016456604,
+        0.7546764016151428,
+        0.8888207077980042,
+        0.8573716282844543,
+        0.9003377556800842
+      ],
+      "top_2_clip_indices": [
+        6,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-25.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.884911835193634,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.23465998470783234,
+        0.1402202844619751,
+        0.5092175602912903,
+        0.7888598442077637,
+        0.9136590361595154,
+        0.8524210453033447,
+        0.6247450709342957
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-29.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9819122552871704,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.24102500081062317,
+        0.6574211716651917,
+        0.9848797917366028,
+        0.9791659712791443,
+        0.7627549171447754,
+        0.5907194018363953,
+        0.259116530418396
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-52.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9437219500541687,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7090378999710083,
+        0.2516551911830902,
+        0.6476437449455261,
+        0.894537627696991,
+        0.9392235279083252,
+        0.9482097625732422,
+        0.8292161822319031
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-53.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9104543924331665,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7604437470436096,
+        0.8426888585090637,
+        0.9005900621414185,
+        0.7071553468704224,
+        0.8075418472290039,
+        0.9194822907447815,
+        0.8963524103164673
+      ],
+      "top_2_clip_indices": [
+        5,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-54.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.927473247051239,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8849148750305176,
+        0.94613116979599,
+        0.9033401608467102,
+        0.8386403918266296,
+        0.8501425385475159,
+        0.7890251874923706,
+        0.46337801218032837
+      ],
+      "top_2_clip_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-55.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7359668612480164,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.6628656983375549,
+        0.45926639437675476,
+        0.42083442211151123,
+        0.47571414709091187,
+        0.5077852606773376,
+        0.39865005016326904,
+        0.7981741428375244
+      ],
+      "top_2_clip_indices": [
+        6,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-56.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9038388133049011,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.45550286769866943,
+        0.711573600769043,
+        0.8692964315414429,
+        0.9301314353942871,
+        0.688381552696228,
+        0.793544352054596,
+        0.6866227388381958
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-57.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8885419964790344,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8502855896949768,
+        0.9182816743850708,
+        0.6246976852416992,
+        0.7471957206726074,
+        0.7582546472549438,
+        0.8085876107215881,
+        0.506455659866333
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-58.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.17463155090808868,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.1411229372024536,
+        0.0374859981238842,
+        0.05069159343838692,
+        0.03966385871171951,
+        0.06608910113573074,
+        0.2132873386144638,
+        0.13125737011432648
+      ],
+      "top_2_clip_indices": [
+        5,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-59.mp4",
+      "split": "train",
+      "actor_group": "A_checkered",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.32331085205078125,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.04152481257915497,
+        0.13511894643306732,
+        0.30028828978538513,
+        0.18431147933006287,
+        0.21389129757881165,
+        0.3469341993331909,
+        0.2636277973651886
+      ],
+      "top_2_clip_indices": [
+        5,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-60.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.975838303565979,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.45180702209472656,
+        0.9738191962242126,
+        0.9482429027557373,
+        0.8341313004493713,
+        0.8320080637931824,
+        0.9376536011695862,
+        0.9779477715492249
+      ],
+      "top_2_clip_indices": [
+        6,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-61.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9438217282295227,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.4540491998195648,
+        0.5196962952613831,
+        0.9037371873855591,
+        0.7976179122924805,
+        0.8227593302726746,
+        0.8910975456237793,
+        0.9674838185310364
+      ],
+      "top_2_clip_indices": [
+        6,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-62.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9801696538925171,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8359313011169434,
+        0.9171181321144104,
+        0.9628636837005615,
+        0.9421675801277161,
+        0.9310770034790039,
+        0.9788458347320557,
+        0.98197340965271
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-63.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.939288318157196,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9397200345993042,
+        0.8728163838386536,
+        0.9047060012817383,
+        0.9050432443618774,
+        0.9379475712776184,
+        0.9270793795585632,
+        0.8771987557411194
+      ],
+      "top_2_clip_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-64.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9309343099594116,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8039785027503967,
+        0.9457485675811768,
+        0.7486042976379395,
+        0.8847643136978149,
+        0.9044303894042969,
+        0.9101904034614563,
+        0.7497504353523254
+      ],
+      "top_2_clip_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-65.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6274324059486389,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.22978413105010986,
+        0.04334196075797081,
+        0.10329342633485794,
+        0.4251869320869446,
+        0.5507364869117737,
+        0.6986722946166992,
+        0.48314571380615234
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-66.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6481860876083374,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.4534086585044861,
+        0.4848411977291107,
+        0.7230081558227539,
+        0.5659763813018799,
+        0.24098674952983856,
+        0.36349865794181824,
+        0.14214587211608887
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-67.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8772130012512207,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.44311583042144775,
+        0.26915687322616577,
+        0.494524210691452,
+        0.8372938632965088,
+        0.9098528027534485,
+        0.7563391923904419,
+        0.4616173207759857
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-68.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8484683036804199,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7487239241600037,
+        0.6119147539138794,
+        0.34326425194740295,
+        0.6313036680221558,
+        0.6628718376159668,
+        0.9142656922340393,
+        0.6886270642280579
+      ],
+      "top_2_clip_indices": [
+        5,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-69.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7640476226806641,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.19077536463737488,
+        0.14650960266590118,
+        0.24510976672172546,
+        0.4715036451816559,
+        0.7703916430473328,
+        0.6466538310050964,
+        0.7579531073570251
+      ],
+      "top_2_clip_indices": [
+        4,
+        6
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-70.mp4",
+      "split": "train",
+      "actor_group": "B_light_blue",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8488712310791016,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.11550860106945038,
+        0.2715480923652649,
+        0.2567501962184906,
+        0.2908913493156433,
+        0.7227923274040222,
+        0.7768343091011047,
+        0.9018710255622864
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-71.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9182597994804382,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.12086087465286255,
+        0.7045416831970215,
+        0.9680054187774658,
+        0.8071498274803162,
+        0.39521557092666626,
+        0.3896160423755646,
+        0.7120327949523926
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-72.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9246965646743774,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.4746114909648895,
+        0.8333152532577515,
+        0.9403063058853149,
+        0.8578997254371643,
+        0.9065135717391968,
+        0.35658785700798035,
+        0.032346922904253006
+      ],
+      "top_2_clip_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-73.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8645105361938477,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.5109420418739319,
+        0.6260266304016113,
+        0.960621178150177,
+        0.36307159066200256,
+        0.1450004130601883,
+        0.07988561689853668,
+        0.06431031227111816
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-74.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9835247993469238,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9832737445831299,
+        0.9852921366691589,
+        0.8811647891998291,
+        0.49941179156303406,
+        0.6976833343505859,
+        0.7961283922195435,
+        0.8134430050849915
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-75.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.86531001329422,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8720532655715942,
+        0.8586001992225647,
+        0.7867290377616882,
+        0.7854487299919128,
+        0.7073954343795776,
+        0.2090219110250473,
+        0.01294441893696785
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-76.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9360539317131042,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.5218006372451782,
+        0.6501424312591553,
+        0.7655503749847412,
+        0.7269884943962097,
+        0.69193434715271,
+        0.9149730205535889,
+        0.9523592591285706
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-77.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6454436182975769,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.20115956664085388,
+        0.0161006897687912,
+        0.011958369985222816,
+        0.07293640822172165,
+        0.4298784136772156,
+        0.5630787014961243,
+        0.7201964855194092
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-78.mp4",
+      "split": "train",
+      "actor_group": "C_purple",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8914178013801575,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7629498839378357,
+        0.5557870268821716,
+        0.5323707461357117,
+        0.9224472641944885,
+        0.8524169325828552,
+        0.12300410121679306,
+        0.025160448625683784
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-79.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8679988980293274,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7040747404098511,
+        0.7553325295448303,
+        0.11636994779109955,
+        0.4790627956390381,
+        0.42625609040260315,
+        0.7825719118118286,
+        0.9243690967559814
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-80.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9773545265197754,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9603796601295471,
+        0.9810468554496765,
+        0.9747354984283447,
+        0.966041624546051,
+        0.8000186085700989,
+        0.9626599550247192,
+        0.893849790096283
+      ],
+      "top_2_clip_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-81.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9747163653373718,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.983205258846283,
+        0.9351733922958374,
+        0.9192416071891785,
+        0.963532567024231,
+        0.9013360142707825,
+        0.875411868095398,
+        0.7913400530815125
+      ],
+      "top_2_clip_indices": [
+        0,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-82.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9705066680908203,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8639092445373535,
+        0.8668116331100464,
+        0.8982564806938171,
+        0.8230407238006592,
+        0.9277493953704834,
+        0.989017128944397,
+        0.8549746870994568
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-83.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9652368426322937,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9257357120513916,
+        0.9635926485061646,
+        0.9490905404090881,
+        0.9642666578292847,
+        0.9662929177284241,
+        0.9019497632980347,
+        0.5168884992599487
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-84.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9670497179031372,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7134110927581787,
+        0.13732142746448517,
+        0.27120402455329895,
+        0.9153715968132019,
+        0.9669391512870789,
+        0.9698483347892761,
+        0.411262571811676
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-85.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9578857421875,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8651067614555359,
+        0.6300226449966431,
+        0.9284993410110474,
+        0.9327234625816345,
+        0.6057003140449524,
+        0.3000122308731079,
+        0.9745621681213379
+      ],
+      "top_2_clip_indices": [
+        6,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-86.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9852346181869507,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.3811049461364746,
+        0.9682340025901794,
+        0.9880697131156921,
+        0.9848570823669434,
+        0.9844893217086792,
+        0.9030574560165405,
+        0.9087144732475281
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-87.mp4",
+      "split": "train",
+      "actor_group": "D_navy_stripe",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9032539129257202,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.17614871263504028,
+        0.7993922233581543,
+        0.8757352828979492,
+        0.9283252954483032,
+        0.043898992240428925,
+        0.06165510416030884,
+        0.3228057026863098
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-23.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.6725965738296509,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.025839824229478836,
+        0.157989040017128,
+        0.5518859028816223,
+        0.2825142741203308,
+        0.34855276346206665,
+        0.6776902079582214,
+        0.6676319241523743
+      ],
+      "top_2_clip_indices": [
+        5,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-30.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.08375449478626251,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.06647324562072754,
+        0.06663597375154495,
+        0.021692940965294838,
+        0.051086246967315674,
+        0.08901245146989822,
+        0.07245118916034698,
+        0.059592220932245255
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-35.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.2148333042860031,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.10641638934612274,
+        0.1958722472190857,
+        0.22314010560512543,
+        0.18533924221992493,
+        0.16584135591983795,
+        0.14639583230018616,
+        0.10625405609607697
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-36.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.3704151511192322,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.05228838324546814,
+        0.08955367654561996,
+        0.22097553312778473,
+        0.29039034247398376,
+        0.2033688724040985,
+        0.4422990381717682,
+        0.3035951256752014
+      ],
+      "top_2_clip_indices": [
+        5,
+        6
+      ]
+    },
+    {
+      "relative_path": "normal/normal-37.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.249175027012825,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08324461430311203,
+        0.1698470264673233,
+        0.24882708489894867,
+        0.13499417901039124,
+        0.24813762307167053,
+        0.033053118735551834,
+        0.21366335451602936
+      ],
+      "top_2_clip_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-38.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.6113362312316895,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.5581607222557068,
+        0.13601897656917572,
+        0.28372979164123535,
+        0.47024086117744446,
+        0.6621453166007996,
+        0.3813217282295227,
+        0.48872244358062744
+      ],
+      "top_2_clip_indices": [
+        4,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-43.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.19773367047309875,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.04751591384410858,
+        0.03102453052997589,
+        0.14813844859600067,
+        0.2514246702194214,
+        0.017527291551232338,
+        0.007790230680257082,
+        0.015468847937881947
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-88.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.18698103725910187,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.19530825316905975,
+        0.1753225177526474,
+        0.17878924310207367,
+        0.06797661632299423,
+        0.03555300831794739,
+        0.021921886131167412,
+        0.02425798587501049
+      ],
+      "top_2_clip_indices": [
+        0,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-2.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.29199057817459106,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0421731136739254,
+        0.10027982294559479,
+        0.15858295559883118,
+        0.06272055208683014,
+        0.15528564155101776,
+        0.24565081298351288,
+        0.341899037361145
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-3.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.12236394733190536,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08285921812057495,
+        0.051022712141275406,
+        0.12691949307918549,
+        0.03408527374267578,
+        0.11359506845474243,
+        0.04090055450797081,
+        0.007692276034504175
+      ],
+      "top_2_clip_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-4.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9438419342041016,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.9497076272964478,
+        0.8810824751853943,
+        0.924819827079773,
+        0.8907672166824341,
+        0.9371572732925415,
+        0.8863434791564941,
+        0.3272888958454132
+      ],
+      "top_2_clip_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-30.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.1679878532886505,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.04236290603876114,
+        0.014456619508564472,
+        0.07055257260799408,
+        0.017344031482934952,
+        0.09976606070995331,
+        0.1421802043914795,
+        0.19608353078365326
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-31.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.847756564617157,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.05423585698008537,
+        0.0685824379324913,
+        0.8030714392662048,
+        0.7853646874427795,
+        0.7966326475143433,
+        0.8845561742782593,
+        0.7858648896217346
+      ],
+      "top_2_clip_indices": [
+        5,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-32.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.21735163033008575,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0513414666056633,
+        0.09889604896306992,
+        0.12987031042575836,
+        0.33525556325912476,
+        0.09114032238721848,
+        0.03695709630846977,
+        0.05429866537451744
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-37.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9696745872497559,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.847179651260376,
+        0.9664150476455688,
+        0.951431393623352,
+        0.9729772210121155,
+        0.9069098830223083,
+        0.2720847725868225,
+        0.0770275890827179
+      ],
+      "top_2_clip_indices": [
+        3,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-38.mp4",
+      "split": "val",
+      "actor_group": "H_navy_cap",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8412042856216431,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.882485568523407,
+        0.7898110747337341,
+        0.7426150441169739,
+        0.41373130679130554,
+        0.13992665708065033,
+        0.16893784701824188,
+        0.30082663893699646
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-39.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6434327363967896,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08084563910961151,
+        0.550367534160614,
+        0.6492608189582825,
+        0.6385078430175781,
+        0.4694806933403015,
+        0.4573410451412201,
+        0.19377055764198303
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-40.mp4",
+      "split": "val",
+      "actor_group": "G_brown_plaid",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.5280992388725281,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.31786948442459106,
+        0.2916104793548584,
+        0.3847004771232605,
+        0.6670380234718323,
+        0.2132154256105423,
+        0.21219266951084137,
+        0.3319597542285919
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-14.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.23571304976940155,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.21833015978336334,
+        0.248473659157753,
+        0.11551354080438614,
+        0.09795568138360977,
+        0.13526342809200287,
+        0.012959158048033714,
+        0.04556281492114067
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-15.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.5756348967552185,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0829327329993248,
+        0.4591159224510193,
+        0.5227531790733337,
+        0.21444666385650635,
+        0.6268942952156067,
+        0.43492937088012695,
+        0.14959463477134705
+      ],
+      "top_2_clip_indices": [
+        4,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-16.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.16730433702468872,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.19446368515491486,
+        0.13623732328414917,
+        0.07433817535638809,
+        0.09835267066955566,
+        0.04516381770372391,
+        0.010837621986865997,
+        0.02587941475212574
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-31.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.08109493553638458,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.06059994548559189,
+        0.0955040454864502,
+        0.03854026272892952,
+        0.029521172866225243,
+        0.028601400554180145,
+        0.04374688118696213,
+        0.03995543718338013
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-32.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.34638428688049316,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.33695387840270996,
+        0.35185566544532776,
+        0.1395498365163803,
+        0.07779591530561447,
+        0.05297167971730232,
+        0.23476780951023102,
+        0.1418713629245758
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "normal/normal-33.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.30573779344558716,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.20806807279586792,
+        0.03893269971013069,
+        0.017025994136929512,
+        0.07923538237810135,
+        0.0856708362698555,
+        0.2782348692417145,
+        0.3308682441711426
+      ],
+      "top_2_clip_indices": [
+        6,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-34.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.14537683129310608,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.10819749534130096,
+        0.09306555241346359,
+        0.13697253167629242,
+        0.14692501723766327,
+        0.08910709619522095,
+        0.06261888891458511,
+        0.11656632274389267
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "normal/normal-40.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.08501971513032913,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08141887933015823,
+        0.07914841175079346,
+        0.02952595055103302,
+        0.01856299303472042,
+        0.019106557592749596,
+        0.03021905943751335,
+        0.015854688361287117
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-41.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.4417884945869446,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.23578967154026031,
+        0.3966839015483856,
+        0.0842844769358635,
+        0.1040508970618248,
+        0.20117425918579102,
+        0.48755544424057007,
+        0.07916112244129181
+      ],
+      "top_2_clip_indices": [
+        5,
+        1
+      ]
+    },
+    {
+      "relative_path": "normal/normal-42.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.09459109604358673,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.13664661347866058,
+        0.0606013685464859,
+        0.043628573417663574,
+        0.03243209794163704,
+        0.04934152588248253,
+        0.03241902217268944,
+        0.035859495401382446
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-5.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.613418459892273,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0251227505505085,
+        0.13115522265434265,
+        0.375931978225708,
+        0.4074036777019501,
+        0.7860615849494934,
+        0.2498476505279541,
+        0.3353278636932373
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-6.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.3775790333747864,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.035888902842998505,
+        0.047013673931360245,
+        0.45722100138664246,
+        0.3024200201034546,
+        0.03044239804148674,
+        0.030723702162504196,
+        0.02205098234117031
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-7.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8773862719535828,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7435005307197571,
+        0.7478528618812561,
+        0.768878698348999,
+        0.8762325644493103,
+        0.8774747848510742,
+        0.8273311257362366,
+        0.8253699541091919
+      ],
+      "top_2_clip_indices": [
+        4,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-24.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6277004480361938,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.09137538075447083,
+        0.5649195313453674,
+        0.6254401803016663,
+        0.44239264726638794,
+        0.6275307536125183,
+        0.5858671069145203,
+        0.037008047103881836
+      ],
+      "top_2_clip_indices": [
+        4,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-26.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8743809461593628,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.6637634634971619,
+        0.8128114938735962,
+        0.705996036529541,
+        0.8861269950866699,
+        0.8449578285217285,
+        0.807613730430603,
+        0.8619830012321472
+      ],
+      "top_2_clip_indices": [
+        3,
+        6
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-27.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8902740478515625,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8705762624740601,
+        0.8722724914550781,
+        0.9041640758514404,
+        0.7799288034439087,
+        0.3389151394367218,
+        0.19990646839141846,
+        0.13741274178028107
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-28.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.3903793394565582,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.3179278075695038,
+        0.11498363316059113,
+        0.09070956707000732,
+        0.010885603725910187,
+        0.09383852779865265,
+        0.464016854763031,
+        0.23106828331947327
+      ],
+      "top_2_clip_indices": [
+        5,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-33.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.70637047290802,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.12751774489879608,
+        0.1787472367286682,
+        0.6435439586639404,
+        0.7624927163124084,
+        0.3769114017486572,
+        0.08135214447975159,
+        0.11345682293176651
+      ],
+      "top_2_clip_indices": [
+        3,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-34.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7723747491836548,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.31865134835243225,
+        0.5491332411766052,
+        0.5746203660964966,
+        0.8684165477752686,
+        0.6380518674850464,
+        0.3137853741645813,
+        0.22576463222503662
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-35.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.49068450927734375,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.07370584458112717,
+        0.6106677055358887,
+        0.371730774641037,
+        0.3041786253452301,
+        0.18790750205516815,
+        0.11710622906684875,
+        0.2131212204694748
+      ],
+      "top_2_clip_indices": [
+        1,
+        2
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-36.mp4",
+      "split": "test",
+      "actor_group": "F_gray_backpack",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9600380659103394,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.7905003428459167,
+        0.8640384674072266,
+        0.7075116038322449,
+        0.9310556054115295,
+        0.9545494318008423,
+        0.9650542736053467,
+        0.43964099884033203
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-41.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.633124828338623,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.5147942900657654,
+        0.7375470399856567,
+        0.4713083505630493,
+        0.26257339119911194,
+        0.027446340769529343,
+        0.08045990765094757,
+        0.041173722594976425
+      ],
+      "top_2_clip_indices": [
+        1,
+        0
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-42.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9452837109565735,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.28016164898872375,
+        0.4970284104347229,
+        0.8859235644340515,
+        0.8478915095329285,
+        0.9608001708984375,
+        0.9269623756408691,
+        0.9227043390274048
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-43.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.8658124208450317,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.02735850214958191,
+        0.19379541277885437,
+        0.3043036162853241,
+        0.14513631165027618,
+        0.8705854415893555,
+        0.8620500564575195,
+        0.1414230465888977
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-44.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.9594179391860962,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.02355099841952324,
+        0.3181021213531494,
+        0.8297827839851379,
+        0.9151057600975037,
+        0.9621354937553406,
+        0.9567461609840393,
+        0.9542375802993774
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-45.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.323108971118927,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.034094445407390594,
+        0.30923426151275635,
+        0.33676183223724365,
+        0.08439288288354874,
+        0.07092735171318054,
+        0.08907226473093033,
+        0.08772999793291092
+      ],
+      "top_2_clip_indices": [
+        2,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-46.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.39013928174972534,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.058508533984422684,
+        0.5653219223022461,
+        0.15545116364955902,
+        0.04127984866499901,
+        0.23926058411598206,
+        0.15493257343769073,
+        0.0358886644244194
+      ],
+      "top_2_clip_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-47.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.2058638632297516,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.3681164085865021,
+        0.056227006018161774,
+        0.00872895959764719,
+        0.008532652631402016,
+        0.011626388877630234,
+        0.015169737860560417,
+        0.10148080438375473
+      ],
+      "top_2_clip_indices": [
+        0,
+        6
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-48.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.7108206748962402,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.8089373707771301,
+        0.5882083177566528,
+        0.17425434291362762,
+        0.06085333600640297,
+        0.08481976389884949,
+        0.03192410245537758,
+        0.03092825599014759
+      ],
+      "top_2_clip_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-51.mp4",
+      "split": "test",
+      "actor_group": "IJK_connected_session",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.4272249639034271,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.3515757918357849,
+        0.4262474477291107,
+        0.1772231161594391,
+        0.006593543104827404,
+        0.11381902545690536,
+        0.4260789453983307,
+        0.22708910703659058
+      ],
+      "top_2_clip_indices": [
+        1,
+        5
+      ]
+    },
+    {
+      "relative_path": "normal/normal-89.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.5610254406929016,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.27905094623565674,
+        0.24165943264961243,
+        0.3933945298194885,
+        0.1969510167837143,
+        0.5552092790603638,
+        0.1417093575000763,
+        0.5675761103630066
+      ],
+      "top_2_clip_indices": [
+        6,
+        4
+      ]
+    },
+    {
+      "relative_path": "normal/normal-90.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 0,
+      "ground_truth_name": "Normal",
+      "shoplifting_probability": 0.3444027304649353,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.2931033968925476,
+        0.34284767508506775,
+        0.2968181371688843,
+        0.24108155071735382,
+        0.34470134973526,
+        0.2409263402223587,
+        0.24046637117862701
+      ],
+      "top_2_clip_indices": [
+        4,
+        1
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-88.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6603418588638306,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.1082669347524643,
+        0.25204041600227356,
+        0.18722739815711975,
+        0.4079955220222473,
+        0.5744041800498962,
+        0.7371571063995361,
+        0.4446953237056732
+      ],
+      "top_2_clip_indices": [
+        5,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-89.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.6338553428649902,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.0708320140838623,
+        0.18599440157413483,
+        0.7069639563560486,
+        0.5543562769889832,
+        0.5285894870758057,
+        0.4433731734752655,
+        0.2335425615310669
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-90.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.5968315601348877,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.06898821890354156,
+        0.16707006096839905,
+        0.2921299636363983,
+        0.2704417109489441,
+        0.27045437693595886,
+        0.646704912185669,
+        0.5452050566673279
+      ],
+      "top_2_clip_indices": [
+        5,
+        6
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-91.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.5168058276176453,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.02278977259993553,
+        0.048563454300165176,
+        0.5698865652084351,
+        0.22641366720199585,
+        0.4635988473892212,
+        0.17126840353012085,
+        0.03640301525592804
+      ],
+      "top_2_clip_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-92.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.40355825424194336,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.08388132601976395,
+        0.3085986375808716,
+        0.46957510709762573,
+        0.3392401337623596,
+        0.20144440233707428,
+        0.06102047860622406,
+        0.02237984538078308
+      ],
+      "top_2_clip_indices": [
+        2,
+        3
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-93.mp4",
+      "split": "ood",
+      "actor_group": "HR_new_scene",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.5457695126533508,
+      "predicted_label": 1,
+      "predicted_name": "Shoplifting",
+      "correct": true,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.018876226618885994,
+        0.06855081021785736,
+        0.3097977042198181,
+        0.579314649105072,
+        0.512361466884613,
+        0.2700037360191345,
+        0.17884035408496857
+      ],
+      "top_2_clip_indices": [
+        3,
+        4
+      ]
+    },
+    {
+      "relative_path": "shoplifting/shoplifting-50.mp4",
+      "split": "qualitative",
+      "actor_group": "qualitative_new_angle",
+      "ground_truth": 1,
+      "ground_truth_name": "Shoplifting",
+      "shoplifting_probability": 0.4860092103481293,
+      "predicted_label": 0,
+      "predicted_name": "Normal",
+      "correct": false,
+      "threshold": 0.5,
+      "clip_center_fractions": [
+        0.12,
+        0.24666666666666667,
+        0.37333333333333335,
+        0.5,
+        0.6266666666666667,
+        0.7533333333333334,
+        0.88
+      ],
+      "clip_shoplifting_probabilities": [
+        0.12778297066688538,
+        0.12192434072494507,
+        0.2765411138534546,
+        0.16835613548755646,
+        0.6504775881767273,
+        0.32202115654945374,
+        0.3105657994747162
+      ],
+      "top_2_clip_indices": [
+        4,
+        5
+      ]
+    }
+  ]
+}

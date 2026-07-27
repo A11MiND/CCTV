@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-07-27T14:49:36.669305+00:00",
+  "selection_policy": "First numeric held-out test Shoplifting source when --video=auto; selection is independent of model confidence and correctness",
+  "source_relative_path": "shoplifting/shoplifting-5.mp4",
+  "split": "test",
+  "ground_truth": "Shoplifting",
+  "video_shoplifting_probability": 0.613418459892273,
+  "video_prediction": "Shoplifting",
+  "correct": true,
+  "fixed_threshold": 0.5,
+  "test_accuracy": 0.7333333333333333,
+  "test_balanced_accuracy": 0.775,
+  "test_support": 30,
+  "rolling_windows": 21,
+  "frames_per_window": 16,
+  "frame_stride": 4,
+  "output": "P:\\CCTV\\public\\assets\\video\\shoplifting-mil-heldout-demo.mp4",
+  "output_codec": "H.264 / libx264",
+  "output_pixel_format": "yuv420p",
+  "perception_overlay": {
+    "enabled": true,
+    "model": "P:\\CCTV\\models\\yolo26s.pt",
+    "task": "person detection only",
+    "tracker": "ByteTrack",
+    "confidence_threshold": 0.35,
+    "image_size": 640
+  },
+  "behavior_probability_model": "R3D-18 embeddings + five-seed MIL heads",
+  "dataset_attribution": {
+    "name": "MNNIT Allahabad Shoplifting Dataset",
+    "license": "CC BY 4.0",
+    "doi": "10.17632/r3yjf35hzr.1"
+  },
+  "output_frames": 357,
+  "output_fps": 30.0,
+  "output_width": 640,
+  "output_height": 480
+}

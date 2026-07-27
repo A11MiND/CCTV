@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "script_version": "1.0.0",
+  "architecture": "MILHead(512 -> 64 -> 1)",
+  "feature_scale": 21.09858512878418,
+  "dropout": 0.25,
+  "clips_per_video": 7,
+  "frames_per_clip": 16,
+  "frame_stride": 4,
+  "top_clips": 2,
+  "threshold": 0.5,
+  "manifest_sha256": "4b0969f2b3cc0c51863c6ef61470b692874a260221e3330f63c48fd5d70237e1",
+  "source_audit_sha256": "9002f7f4729ce108e875cc622752b3ec1214e36cb4bb4a7dcc9b3d06bef251f8",
+  "seeds": [
+    {
+      "seed": 11,
+      "best_epoch": 170,
+      "best_validation_score": 0.7106250000000001
+    },
+    {
+      "seed": 23,
+      "best_epoch": 160,
+      "best_validation_score": 0.7106250000000001
+    },
+    {
+      "seed": 37,
+      "best_epoch": 145,
+      "best_validation_score": 0.7100000000000001
+    },
+    {
+      "seed": 51,
+      "best_epoch": 130,
+      "best_validation_score": 0.7100000000000001
+    },
+    {
+      "seed": 79,
+      "best_epoch": 140,
+      "best_validation_score": 0.7100000000000001
+    }
+  ],
+  "checkpoint_bytes": 665437
+}

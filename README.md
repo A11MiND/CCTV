@@ -18,8 +18,12 @@ This repository contains an interactive retail loss-prevention prototype, a real
 | Architecture screenshot | `design/prototype-architecture.png` |
 | Mobile screenshot | `design/prototype-mobile.png` |
 | Real-video YOLO26 demo | `public/assets/video/yolo26-retail-demo.mp4` |
+| Shoplifting benchmark demo | `public/assets/video/shoplifting-mil-heldout-demo.mp4` |
+| Measured shoplifting benchmark | `docs/results/shoplifting/BENCHMARK.md` |
+| Actor/clothing-disjoint split | `docs/results/shoplifting/actor-clothing-disjoint-split.csv` |
 | Local GPU metrics | `assets/video/yolo26-run-metrics.json` |
 | Reproducible inference script | `scripts/run_yolo_retail_demo.py` |
+| Reproducible shoplifting benchmark | `scripts/shoplifting_mil_baseline.py` |
 | English architecture diagrams | `docs/diagrams/en/` |
 | Frontend QA results | `docs/frontend-qa-results.json` |
 
@@ -71,6 +75,37 @@ Run the demo:
 The script reads `assets/video/pexels-hong-kong-supermarket.mp4` and writes `public/assets/video/yolo26-retail-demo.mp4`.
 
 This run measures person detection, tracking, rendering, and local GPU throughput. Shoplifting event accuracy requires labeled action sequences and a store acceptance set.
+
+## Measured shoplifting benchmark
+
+The public MNNIT Allahabad dataset contains 90 Normal and 92 Shoplifting
+videos. The reviewed split isolates the primary actors, clothing groups, and
+connected recording sessions. Twelve unsuitable or duplicate Normal videos are
+excluded, and eight 1920×1080 videos form a separate scene-shift holdout.
+
+Internal test result at the fixed 0.50 threshold:
+
+| Videos | Accuracy | Balanced accuracy | Precision | Recall | F1 | ROC-AUC |
+|---:|---:|---:|---:|---:|---:|---:|
+| 30 | **73.3%** | **77.5%** | 92.9% | 65.0% | 76.5% | 91.5% |
+
+![Held-out shoplifting demo](docs/results/shoplifting/shoplifting-mil-heldout-demo-preview.jpg)
+
+The new-scene holdout contains only eight videos and measured 75.0% accuracy
+and 66.7% balanced accuracy. See
+[`docs/results/shoplifting/BENCHMARK.md`](docs/results/shoplifting/BENCHMARK.md)
+for the confusion matrix, confidence intervals, split protocol, and limitations.
+
+Run the reproducible benchmark:
+
+```powershell
+.\.venv-yolo\Scripts\python.exe scripts\create_shoplifting_split_manifest.py
+.\.venv-yolo\Scripts\python.exe scripts\shoplifting_mil_baseline.py run
+```
+
+The rendered H.264 demo combines R3D-18 MIL shoplifting probability with a
+YOLO26s + ByteTrack person-perception overlay. The full video is
+[`public/assets/video/shoplifting-mil-heldout-demo.mp4`](public/assets/video/shoplifting-mil-heldout-demo.mp4).
 
 ## Proposed model pipeline
 

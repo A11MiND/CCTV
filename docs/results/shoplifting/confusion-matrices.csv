@@ -1,0 +1,11 @@
+split,actual_label,predicted_normal,predicted_shoplifting
+train,Normal,55,3
+train,Shoplifting,3,52
+val,Normal,6,2
+val,Shoplifting,4,6
+test,Normal,9,1
+test,Shoplifting,7,13
+ood,Normal,1,1
+ood,Shoplifting,1,5
+qualitative,Normal,0,0
+qualitative,Shoplifting,1,0
