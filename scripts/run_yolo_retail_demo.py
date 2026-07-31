@@ -33,6 +33,26 @@ INK = (16, 21, 25)
 WHITE = (245, 247, 249)
 
 
+def resolve_path(path: Path) -> Path:
+    return path.resolve() if path.is_absolute() else (WORKSPACE / path).resolve()
+
+
+def source_metadata(input_path: Path) -> dict[str, str]:
+    if "shoplifting-video-dataset" in input_path.as_posix().lower():
+        return {
+            "label": "Dataset DOI 10.17632/r3yjf35hzr.1",
+            "page": "https://data.mendeley.com/datasets/r3yjf35hzr/1",
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "creator": "Mohd. Aquib Ansari and Dushyant Kumar Singh",
+        }
+    return {
+        "label": "Pexels / Suika Chan",
+        "page": "https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/",
+        "license": "https://www.pexels.com/license/",
+        "creator": "Suika Chan",
+    }
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -119,6 +139,7 @@ def draw_hud(
     person_count: int,
     inference_ms: float,
     device_name: str,
+    source_label: str,
 ) -> None:
     height, width = frame.shape[:2]
     overlay = frame.copy()
@@ -159,8 +180,8 @@ def draw_hud(
     )
     cv2.putText(
         frame,
-        "Source: Pexels / Suika Chan",
-        (width - 262, height - 29),
+        f"Source: {source_label}",
+        (width - 375, height - 29),
         cv2.FONT_HERSHEY_SIMPLEX,
         0.46,
         (181, 190, 196),
@@ -171,6 +192,8 @@ def draw_hud(
 
 def main() -> None:
     args = parse_args()
+    for attribute in ("input", "output", "metrics", "preview", "model"):
+        setattr(args, attribute, resolve_path(getattr(args, attribute)))
     if not args.input.exists():
         raise FileNotFoundError(args.input)
     if not torch.cuda.is_available():
@@ -204,6 +227,7 @@ def main() -> None:
         raise RuntimeError(f"Could not open output writer {intermediate}")
 
     model = YOLO(str(args.model))
+    source = source_metadata(args.input)
     device_name = torch.cuda.get_device_name(0).replace("NVIDIA GeForce ", "")
     history: dict[int, deque[tuple[int, int]]] = defaultdict(lambda: deque(maxlen=24))
     inference_times: list[float] = []
@@ -238,7 +262,6 @@ def main() -> None:
             conf=args.conf,
             imgsz=args.imgsz,
             device=0,
-            half=True,
             verbose=False,
         )[0]
         torch.cuda.synchronize()
@@ -281,7 +304,7 @@ def main() -> None:
                     )
 
         per_frame_counts.append(person_count)
-        draw_hud(frame, person_count, inference_ms, device_name)
+        draw_hud(frame, person_count, inference_ms, device_name, source["label"])
         writer.write(frame)
         frames_written += 1
 
@@ -318,15 +341,16 @@ def main() -> None:
         ],
         check=True,
     )
+    intermediate.unlink(missing_ok=True)
 
     metrics = {
         "run_type": "real-video person detection and tracking demo",
         "limitation": "Not a shoplifting, criminal-intent, or identity decision.",
         "timestamp_local": time.strftime("%Y-%m-%d %H:%M:%S"),
         "source": {
-            "page": "https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/",
-            "license": "https://www.pexels.com/license/",
-            "creator": "Suika Chan",
+            "page": source["page"],
+            "license": source["license"],
+            "creator": source["creator"],
             "input_file": str(args.input.relative_to(WORKSPACE)),
             "resolution": [source_width, source_height],
             "fps": source_fps,
@@ -342,7 +366,7 @@ def main() -> None:
             "tracker": "ByteTrack",
             "imgsz": args.imgsz,
             "confidence_threshold": args.conf,
-            "fp16": True,
+            "fp16": False,
         },
         "result": {
             "frames_processed": frames_written,

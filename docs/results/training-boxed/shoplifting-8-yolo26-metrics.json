@@ -1,0 +1,42 @@
+{
+  "run_type": "real-video person detection and tracking demo",
+  "limitation": "Not a shoplifting, criminal-intent, or identity decision.",
+  "timestamp_local": "2026-07-31 22:33:08",
+  "source": {
+    "page": "https://data.mendeley.com/datasets/r3yjf35hzr/1",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Mohd. Aquib Ansari and Dushyant Kumar Singh",
+    "input_file": "data\\shoplifting-video-dataset\\shoplifting\\shoplifting-8.mp4",
+    "resolution": [
+      640,
+      480
+    ],
+    "fps": 30.0,
+    "frames": 316,
+    "duration_seconds": 10.533
+  },
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "cuda_available": true,
+    "torch": "2.12.1+cu130",
+    "ultralytics": "8.4.106",
+    "model": "yolo26s.pt",
+    "tracker": "ByteTrack",
+    "imgsz": 640,
+    "confidence_threshold": 0.25,
+    "fp16": false
+  },
+  "result": {
+    "frames_processed": 158,
+    "output_fps": 15.0,
+    "wall_seconds": 4.145,
+    "pipeline_fps_including_render": 38.12,
+    "inference_ms_mean": 17.36,
+    "inference_ms_p50": 12.28,
+    "inference_ms_p95": 13.78,
+    "persons_per_frame_mean": 1.0,
+    "persons_per_frame_max": 1,
+    "unique_track_ids": 1,
+    "output_file": "public\\assets\\video\\training-boxed\\shoplifting-8-yolo26.mp4"
+  }
+}
