@@ -1,6 +1,6 @@
 {
-  "tested_at": "2026-07-26T05:29:32.404Z",
-  "url": "http://127.0.0.1:4173",
+  "tested_at": "2026-07-31T14:25:55.379Z",
+  "url": "http://127.0.0.1:4174",
   "assertions": [
     {
       "name": "HTTP 200",
@@ -21,6 +21,76 @@
       "name": "YOLO26 H.264 影片已載入",
       "passed": true,
       "detail": "{\"readyState\":4,\"width\":1280,\"height\":720}"
+    },
+    {
+      "name": "TRAIN · SHOPLIFTING 08 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · NORMAL 06 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · SHOPLIFTING 01 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "三支 training dataset 影片已載入",
+      "passed": true,
+      "detail": "[{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480}]"
+    },
+    {
+      "name": "URL 記錄 Positive set",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · SHOPLIFTING 10 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · SHOPLIFTING 14 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · SHOPLIFTING 16 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "三支 training dataset 影片已載入",
+      "passed": true,
+      "detail": "[{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480}]"
+    },
+    {
+      "name": "URL 記錄 Normal set",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · NORMAL 02 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · NORMAL 07 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "TRAIN · NORMAL 11 可見",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "三支 training dataset 影片已載入",
+      "passed": true,
+      "detail": "[{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480},{\"readyState\":4,\"width\":640,\"height\":480}]"
     },
     {
       "name": "事件研判畫面可見",
@@ -61,6 +131,8 @@
   "browser_errors": [],
   "screenshots": [
     "design/prototype-live.png",
+    "design/dataset-camera-set-b-positive.png",
+    "design/dataset-camera-set-c-normal.png",
     "design/prototype-review.png",
     "design/prototype-architecture.png",
     "design/prototype-mobile.png"

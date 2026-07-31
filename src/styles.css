@@ -359,6 +359,43 @@ svg {
   margin-bottom: 13px;
 }
 
+.workspace-meta {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dataset-set-switch {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #0d1316;
+}
+
+.dataset-set-switch button {
+  min-height: 27px;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.61rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.dataset-set-switch button:last-child {
+  border-right: 0;
+}
+
+.dataset-set-switch button[aria-pressed="true"] {
+  background: rgb(27 197 181 / 13%);
+  color: var(--teal-soft);
+  box-shadow: inset 0 -2px 0 var(--teal);
+}
+
 .workspace-heading > div,
 .review-title-row > div,
 .support-header > div {
@@ -464,6 +501,7 @@ svg {
 
 .feed-timecode,
 .real-video-badge,
+.dataset-video-badge,
 .review-source-badge {
   position: absolute;
   z-index: 3;
@@ -496,6 +534,20 @@ svg {
   border-radius: 50%;
   background: var(--teal);
   box-shadow: 0 0 0 4px rgb(27 197 181 / 12%);
+}
+
+.dataset-video-badge {
+  position: absolute;
+  z-index: 3;
+  right: 7px;
+  bottom: 7px;
+  padding: 4px 6px;
+  border: 1px solid rgb(255 194 71 / 42%);
+  background: rgb(7 11 13 / 82%);
+  color: #ffd36f;
+  font-size: 0.54rem;
+  font-weight: 760;
+  letter-spacing: 0.04em;
 }
 
 .risk-overlay {
@@ -1843,6 +1895,10 @@ svg {
   .support-header,
   .review-title-row {
     align-items: flex-start;
+  }
+
+  .workspace-meta {
+    display: none;
   }
 
   .latency-indicator,

@@ -7,7 +7,7 @@ import CameraSetup from "./components/CameraSetup";
 import DataLoop from "./components/DataLoop";
 import ArchitectureView from "./components/ArchitectureView";
 import Icon from "./components/Icon";
-import { events } from "./data/demoData";
+import { datasetCameraSets, events, primaryCamera } from "./data/demoData";
 
 const decisionCopy = {
   attention: "已標記為「需關注」，並記錄於人工回饋。",
@@ -17,6 +17,12 @@ const decisionCopy = {
 
 export default function App() {
   const [active, setActive] = useState("live");
+  const [cameraSetId, setCameraSetId] = useState(() => {
+    const requested = new URLSearchParams(window.location.search).get("datasetSet");
+    return datasetCameraSets.some((item) => item.id === requested)
+      ? requested
+      : datasetCameraSets[0].id;
+  });
   const [selectedCameraId, setSelectedCameraId] = useState("aisle");
   const [selectedEventId, setSelectedEventId] = useState(events[0].id);
   const [evidenceStep, setEvidenceStep] = useState("missing");
@@ -25,6 +31,13 @@ export default function App() {
   const [comment, setComment] = useState("");
   const [toast, setToast] = useState("");
   const toastTimerRef = useRef(null);
+  const cameraSet =
+    datasetCameraSets.find((item) => item.id === cameraSetId) ??
+    datasetCameraSets[0];
+  const liveCameras = useMemo(
+    () => [primaryCamera, ...cameraSet.cameras],
+    [cameraSet],
+  );
 
   const showToast = useCallback((message) => {
     setToast(message);
@@ -49,6 +62,14 @@ export default function App() {
     setSelectedEventId(eventId);
     setActive("review");
     setEvidenceStep("missing");
+  }, []);
+
+  const handleCameraSet = useCallback((nextSetId) => {
+    setCameraSetId(nextSetId);
+    setSelectedCameraId("aisle");
+    const url = new URL(window.location.href);
+    url.searchParams.set("datasetSet", nextSetId);
+    window.history.replaceState({}, "", url);
   }, []);
 
   const surface = useMemo(() => {
@@ -76,6 +97,10 @@ export default function App() {
 
     return (
       <LiveView
+        cameraSetId={cameraSetId}
+        cameraSetOptions={datasetCameraSets}
+        cameras={liveCameras}
+        onCameraSet={handleCameraSet}
         onCameraSelect={setSelectedCameraId}
         onDecision={handleDecision}
         onEventSelect={setSelectedEventId}
@@ -86,11 +111,14 @@ export default function App() {
     );
   }, [
     active,
+    cameraSetId,
     comment,
     evidenceStep,
     handleDecision,
     handleReview,
+    handleCameraSet,
     isPlaying,
+    liveCameras,
     reviewStatus,
     selectedCameraId,
     selectedEventId,

@@ -17,6 +17,8 @@ This repository contains an interactive retail loss-prevention prototype, a real
 | Event review screenshot | `design/prototype-review.png` |
 | Architecture screenshot | `design/prototype-architecture.png` |
 | Mobile screenshot | `design/prototype-mobile.png` |
+| Dataset camera-set screenshots | `design/prototype-live.png`, `design/dataset-camera-set-*.png` |
+| Training-video UI previews | `public/assets/cctv/training/` |
 | Real-video YOLO26 demo | `public/assets/video/yolo26-retail-demo.mp4` |
 | YOLO26 shoplifting v2 demo | `public/assets/video/shoplifting-yolo26-v2-demo.mp4` |
 | YOLO26 shoplifting v2 benchmark | `docs/results/shoplifting-yolo26-v2/BENCHMARK.md` |
@@ -56,6 +58,11 @@ The prototype provides:
 - camera and model version metadata;
 - a sidecar integration view for an existing NVR;
 - desktop and mobile layouts.
+
+The live view includes three selectable camera-preview sets built from nine
+videos in the actor/clothing-disjoint training split: A Mixed, B Positive, and
+C Normal. Each tile is a real six-second dataset clip with a visible training
+label and source record.
 
 ![Event review prototype](design/prototype-review.png)
 

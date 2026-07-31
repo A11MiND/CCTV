@@ -1,52 +1,129 @@
-export const cameras = [
+export const primaryCamera = {
+  id: "aisle",
+  label: "貨架通道 03",
+  shortLabel: "貨架通道 03 · CM532",
+  model: "IPC-HDBW2249E-S-IL",
+  code: "CM532",
+  stream: "1080p · 5 FPS 分析",
+  bitrate: "1.8 Mbps",
+  status: "online",
+  image: "/assets/video/yolo26-preview.jpg",
+  video: "/assets/video/yolo26-retail-demo.mp4",
+  performanceLabel: "RTX 4060 實跑",
+  source:
+    "https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/",
+};
+
+const trainingCamera = ({
+  id,
+  label,
+  file,
+  datasetLabel,
+  actorGroup,
+}) => ({
+  id,
+  label,
+  shortLabel: datasetLabel,
+  model: "Shoplifting Dataset 2022",
+  code: actorGroup,
+  stream: "640×480 · 15 FPS preview",
+  bitrate: "Dataset clip",
+  status: "online",
+  image: `/assets/cctv/training/${file}.jpg`,
+  video: `/assets/cctv/training/${file}.mp4`,
+  datasetLabel,
+  source:
+    "https://data.mendeley.com/datasets/r3yjf35hzr/1",
+});
+
+export const datasetCameraSets = [
   {
-    id: "aisle",
-    label: "貨架通道 03",
-    shortLabel: "貨架通道 03 · CM532",
-    model: "IPC-HDBW2249E-S-IL",
-    code: "CM532",
-    stream: "1080p · 5 FPS 分析",
-    bitrate: "1.8 Mbps",
-    status: "online",
-    image: "/assets/video/yolo26-preview.jpg",
-    video: "/assets/video/yolo26-retail-demo.mp4",
-    source:
-      "https://www.pexels.com/video/customers-shopping-at-supermarket-10901926/",
+    id: "mixed",
+    shortLabel: "A · Mixed",
+    label: "Mixed training examples",
+    cameras: [
+      trainingCamera({
+        id: "entrance",
+        label: "Training Shoplifting 08",
+        file: "set-a-shoplifting-8",
+        datasetLabel: "TRAIN · SHOPLIFTING 08",
+        actorGroup: "A_checkered",
+      }),
+      trainingCamera({
+        id: "checkout",
+        label: "Training Normal 06",
+        file: "set-a-normal-6",
+        datasetLabel: "TRAIN · NORMAL 06",
+        actorGroup: "C_purple",
+      }),
+      trainingCamera({
+        id: "drinks",
+        label: "Training Shoplifting 01",
+        file: "set-a-shoplifting-1",
+        datasetLabel: "TRAIN · SHOPLIFTING 01",
+        actorGroup: "D_navy_stripe",
+      }),
+    ],
   },
   {
-    id: "entrance",
-    label: "入口",
-    shortLabel: "入口 · CM390",
-    model: "IPC-HDBW1230E",
-    code: "CM390",
-    stream: "1080p · 3 FPS 分析",
-    bitrate: "1.2 Mbps",
-    status: "online",
-    image: "/assets/cctv/entrance.png",
+    id: "positive",
+    shortLabel: "B · Positive",
+    label: "Shoplifting-positive training examples",
+    cameras: [
+      trainingCamera({
+        id: "entrance",
+        label: "Training Shoplifting 10",
+        file: "set-b-shoplifting-10",
+        datasetLabel: "TRAIN · SHOPLIFTING 10",
+        actorGroup: "B_light_blue",
+      }),
+      trainingCamera({
+        id: "checkout",
+        label: "Training Shoplifting 14",
+        file: "set-b-shoplifting-14",
+        datasetLabel: "TRAIN · SHOPLIFTING 14",
+        actorGroup: "C_purple",
+      }),
+      trainingCamera({
+        id: "drinks",
+        label: "Training Shoplifting 16",
+        file: "set-b-shoplifting-16",
+        datasetLabel: "TRAIN · SHOPLIFTING 16",
+        actorGroup: "D_navy_stripe",
+      }),
+    ],
   },
   {
-    id: "checkout",
-    label: "收銀區",
-    shortLabel: "收銀區 · CM519",
-    model: "IPC-HDW1239V-A",
-    code: "CM519",
-    stream: "1080p · 3 FPS 分析",
-    bitrate: "1.5 Mbps",
-    status: "online",
-    image: "/assets/cctv/checkout.png",
-  },
-  {
-    id: "drinks",
-    label: "飲品區",
-    shortLabel: "飲品區 · CM532",
-    model: "IPC-HDBW2249E-S-IL",
-    code: "CM532",
-    stream: "1080p · 3 FPS 分析",
-    bitrate: "1.4 Mbps",
-    status: "online",
-    image: "/assets/cctv/drinks.png",
+    id: "normal",
+    shortLabel: "C · Normal",
+    label: "Normal-control training examples",
+    cameras: [
+      trainingCamera({
+        id: "entrance",
+        label: "Training Normal 02",
+        file: "set-c-normal-2",
+        datasetLabel: "TRAIN · NORMAL 02",
+        actorGroup: "B_light_blue",
+      }),
+      trainingCamera({
+        id: "checkout",
+        label: "Training Normal 07",
+        file: "set-c-normal-7",
+        datasetLabel: "TRAIN · NORMAL 07",
+        actorGroup: "D_navy_stripe",
+      }),
+      trainingCamera({
+        id: "drinks",
+        label: "Training Normal 11",
+        file: "set-c-normal-11",
+        datasetLabel: "TRAIN · NORMAL 11",
+        actorGroup: "E_older_plaid",
+      }),
+    ],
   },
 ];
+
+export const cameras = [primaryCamera, ...datasetCameraSets[0].cameras];
 
 export const events = [
   {

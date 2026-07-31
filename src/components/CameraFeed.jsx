@@ -24,9 +24,9 @@ export default function CameraFeed({
         </span>
       </div>
       <div className="feed-visual">
-        {camera.video && !compact ? (
+        {camera.video ? (
           <video
-            aria-label={`${camera.label} YOLO26 實跑影片`}
+            aria-label={`${camera.label}影片`}
             autoPlay
             loop
             muted
@@ -41,8 +41,11 @@ export default function CameraFeed({
         {camera.video && !compact ? (
           <span className="real-video-badge">
             <i />
-            RTX 4060 實跑
+            {camera.performanceLabel ?? "真實影片"}
           </span>
+        ) : null}
+        {camera.datasetLabel ? (
+          <span className="dataset-video-badge">{camera.datasetLabel}</span>
         ) : null}
         {!compact ? (
           <span className="feed-timecode">14:32:18</span>

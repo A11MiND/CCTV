@@ -1,11 +1,15 @@
-import { cameras, events } from "../data/demoData";
+import { events } from "../data/demoData";
 import CameraFeed from "./CameraFeed";
 import EventRail from "./EventRail";
 import Icon from "./Icon";
 
 export default function LiveView({
+  cameraSetId,
+  cameraSetOptions,
+  cameras,
   selectedCameraId,
   selectedEventId,
+  onCameraSet,
   onCameraSelect,
   onEventSelect,
   onReview,
@@ -25,10 +29,28 @@ export default function LiveView({
             <span className="section-kicker">門店現場</span>
             <h1>4 路影像，1 宗事件待覆核</h1>
           </div>
-          <span className="latency-indicator">
-            <i />
-            邊緣分析延遲 1.8 秒
-          </span>
+          <div className="workspace-meta">
+            <span className="latency-indicator">
+              <i />
+              邊緣分析延遲 1.8 秒
+            </span>
+            <div
+              aria-label="Training dataset camera set"
+              className="dataset-set-switch"
+              role="group"
+            >
+              {cameraSetOptions.map((option) => (
+                <button
+                  aria-pressed={option.id === cameraSetId}
+                  key={option.id}
+                  onClick={() => onCameraSet(option.id)}
+                  type="button"
+                >
+                  {option.shortLabel}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="primary-feed-wrap">

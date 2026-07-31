@@ -1,8 +1,8 @@
-# UI 與 CCTV 視覺資產提示詞
+# UI 概念視覺提示詞
 
 Author: Edcosys
 
-本檔記錄 Prototype 所用的生成式視覺提示詞摘要。生成素材只作介面原型與提案說明，不冒充真實事件證據。
+本檔記錄 Prototype 初期 UI 概念圖所用的生成式視覺提示詞摘要。即時監控頁面的攝影機畫面已改用公開 training dataset 的真實影片片段。
 
 ## UI 概念一：即時態勢
 
@@ -12,18 +12,7 @@ Author: Edcosys
 
 延續即時態勢的 graphite／teal／amber 視覺語言。主畫面顯示事件影片、12 秒證據鏈與四個依時序排列的訊號；右側 inspector 顯示事件分數、攝影機、模型／規則版本、保留期限、處理按鈕與備註。所有文字使用繁體中文，並固定顯示「系統描述可觀察行為，不判斷身份或犯罪意圖」。
 
-## CCTV 模擬靜態資產
-
-- 貨架事件：香港風格小型便利店、天花板固定監控視角、16:9、一名成人伸手取貨，其他顧客自然走動；不含文字、品牌、偵測框或可辨識臉部。
-- 入口：同一店舖入口的廣角監控視角，顧客自然進出；不含文字、品牌、偵測框或可辨識臉部。
-- 收銀台：同一店舖收銀區的固定廣角視角，店員與顧客自然互動；不含文字、品牌、偵測框或可辨識臉部。
-- 飲品櫃：同一店舖冷藏飲品區，顧客站在玻璃櫃前；不含文字、品牌、偵測框或可辨識臉部。
-
 生成檔案：
 
 - `design/ui-concept-live.png`
 - `design/ui-concept-review.png`
-- `public/assets/cctv/aisle-event.png`
-- `public/assets/cctv/entrance.png`
-- `public/assets/cctv/checkout.png`
-- `public/assets/cctv/drinks.png`

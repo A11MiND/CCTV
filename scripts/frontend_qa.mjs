@@ -51,10 +51,73 @@ try {
     videoState.readyState >= 2 && videoState.width === 1280 && videoState.height === 720,
     JSON.stringify(videoState),
   );
+
+  async function assertDatasetSet(expectedLabels) {
+    for (const label of expectedLabels) {
+      assert(
+        `${label} 可見`,
+        await desktop
+          .locator(".dataset-video-badge", { hasText: label })
+          .isVisible(),
+      );
+    }
+    const states = await desktop.locator(".secondary-feeds video").evaluateAll(
+      (videos) =>
+        videos.map((video) => ({
+          readyState: video.readyState,
+          width: video.videoWidth,
+          height: video.videoHeight,
+        })),
+    );
+    assert(
+      "三支 training dataset 影片已載入",
+      states.length === 3 &&
+        states.every(
+          (state) =>
+            state.readyState >= 2 && state.width === 640 && state.height === 480,
+        ),
+      JSON.stringify(states),
+    );
+  }
+
+  await assertDatasetSet([
+    "TRAIN · SHOPLIFTING 08",
+    "TRAIN · NORMAL 06",
+    "TRAIN · SHOPLIFTING 01",
+  ]);
   await desktop.screenshot({
     path: `${outputRoot}/prototype-live.png`,
     fullPage: false,
   });
+
+  await desktop.getByRole("button", { name: "B · Positive" }).click();
+  await desktop.waitForTimeout(700);
+  assert("URL 記錄 Positive set", (await desktop.url()).includes("datasetSet=positive"));
+  await assertDatasetSet([
+    "TRAIN · SHOPLIFTING 10",
+    "TRAIN · SHOPLIFTING 14",
+    "TRAIN · SHOPLIFTING 16",
+  ]);
+  await desktop.screenshot({
+    path: `${outputRoot}/dataset-camera-set-b-positive.png`,
+    fullPage: false,
+  });
+
+  await desktop.getByRole("button", { name: "C · Normal" }).click();
+  await desktop.waitForTimeout(700);
+  assert("URL 記錄 Normal set", (await desktop.url()).includes("datasetSet=normal"));
+  await assertDatasetSet([
+    "TRAIN · NORMAL 02",
+    "TRAIN · NORMAL 07",
+    "TRAIN · NORMAL 11",
+  ]);
+  await desktop.screenshot({
+    path: `${outputRoot}/dataset-camera-set-c-normal.png`,
+    fullPage: false,
+  });
+
+  await desktop.getByRole("button", { name: "A · Mixed" }).click();
+  await desktop.waitForTimeout(500);
 
   await desktop.getByRole("button", { name: /查看 12 秒證據/ }).click();
   await desktop.locator(".review-layout").waitFor({ state: "visible" });
@@ -118,6 +181,8 @@ try {
         browser_errors: errors,
         screenshots: [
           "design/prototype-live.png",
+          "design/dataset-camera-set-b-positive.png",
+          "design/dataset-camera-set-c-normal.png",
           "design/prototype-review.png",
           "design/prototype-architecture.png",
           "design/prototype-mobile.png",

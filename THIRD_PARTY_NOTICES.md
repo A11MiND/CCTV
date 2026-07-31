@@ -55,6 +55,11 @@ Derived files:
 
 - `public/assets/video/shoplifting-mil-heldout-demo.mp4`
 - `public/assets/video/shoplifting-yolo26-v2-demo.mp4`
+- `public/assets/cctv/training/*.mp4`
+- `public/assets/cctv/training/*.jpg`
+
+Per-file training split provenance for the UI camera previews is recorded in
+`public/assets/cctv/training/SOURCES.md`.
 
 ## Other referenced public datasets
 
