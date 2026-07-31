@@ -20,6 +20,7 @@ This repository contains an interactive retail loss-prevention prototype, a real
 | Dataset camera-set screenshots | `design/prototype-live.png`, `design/dataset-camera-set-*.png` |
 | Training-video UI previews | `public/assets/cctv/training/` |
 | YOLO26 boxed training videos | `public/assets/video/training-boxed/` |
+| Shoplifting decision videos | `public/assets/video/training-risk/` |
 | Real-video YOLO26 demo | `public/assets/video/yolo26-retail-demo.mp4` |
 | YOLO26 shoplifting v2 demo | `public/assets/video/shoplifting-yolo26-v2-demo.mp4` |
 | YOLO26 shoplifting v2 benchmark | `docs/results/shoplifting-yolo26-v2/BENCHMARK.md` |
@@ -110,6 +111,11 @@ sealed store/camera/day holdout is required for the final generalization claim.
 See
 [`docs/results/shoplifting-yolo26-v2/BENCHMARK.md`](docs/results/shoplifting-yolo26-v2/BENCHMARK.md)
 for component metrics, uncertainty, provenance, and per-video predictions.
+
+Three training-split examples show the complete decision overlay: YOLO26 and
+ByteTrack perception, temporal-model probabilities, the fixed 0.50 threshold,
+ground truth, and the final `ALERT: SHOPLIFTING` or `NO ALERT: NORMAL` result.
+See [`docs/results/training-risk/README.md`](docs/results/training-risk/README.md).
 
 Reproduce the pipeline after placing the dataset under
 `data/shoplifting-video-dataset` and YOLO26s weights at `models/yolo26s.pt`:

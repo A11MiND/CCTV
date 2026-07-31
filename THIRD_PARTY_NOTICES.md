@@ -55,6 +55,8 @@ Derived files:
 
 - `public/assets/video/shoplifting-mil-heldout-demo.mp4`
 - `public/assets/video/shoplifting-yolo26-v2-demo.mp4`
+- `public/assets/video/training-boxed/*.mp4`
+- `public/assets/video/training-risk/*.mp4`
 - `public/assets/cctv/training/*.mp4`
 - `public/assets/cctv/training/*.jpg`
 

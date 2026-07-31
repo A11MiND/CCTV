@@ -1,0 +1,81 @@
+{
+  "source": {
+    "relative_path": "shoplifting/shoplifting-8.mp4",
+    "sha256": "8951cf4149df2f13ce551163657130990b52921db273215e7debd505ea43631e",
+    "width": 640,
+    "height": 480,
+    "fps": 30.0,
+    "frames": 325,
+    "ground_truth": "Shoplifting",
+    "split": "train"
+  },
+  "predictions": {
+    "mvit_video_probability": 0.94488924741745,
+    "r3d18_video_probability": 0.9308450818061829,
+    "final_rule": "max(MViT, R3D18)",
+    "final_video_probability": 0.94488924741745,
+    "threshold": 0.5
+  },
+  "test_metrics": {
+    "support": 30,
+    "tn": 8,
+    "fp": 2,
+    "fn": 0,
+    "tp": 20,
+    "accuracy": 0.9333333333333333,
+    "balanced_accuracy": 0.9,
+    "recall": 1.0,
+    "specificity": 0.8
+  },
+  "perception": {
+    "model": "yolo26s.pt",
+    "model_sha256": "646f8bc3fe0a656803d95c294f7852321748cb29d13466a1af8862e2db384a1b",
+    "tracker": "ByteTrack",
+    "classes": [
+      "person",
+      "backpack",
+      "handbag",
+      "suitcase"
+    ],
+    "confidence": 0.18,
+    "iou": 0.55,
+    "person_track_ids": 3,
+    "bag_track_ids": 4,
+    "mean_people_per_frame": 1.0184615384615385,
+    "mean_bags_per_frame": 1.123076923076923,
+    "inference_ms_mean": 16.697430461286924,
+    "inference_ms_p95": 17.28023998439312
+  },
+  "output": {
+    "video": "public\\assets\\video\\training-risk\\shoplifting-8-risk.mp4",
+    "video_sha256": "043137b49e70037d0a9920ec8b5dd6ee552be8734be92e2603648f307554e834",
+    "video_bytes": 2145214,
+    "preview": "docs\\results\\training-risk\\shoplifting-8-risk-preview.jpg",
+    "preview_sha256": "a11ad641ed2fc46351f79e8af02b229041117b6eeae9b0afe268adf5c12a921d",
+    "preview_bytes": 107484,
+    "encoding": "H.264 yuv420p",
+    "codec_probe_contains_h264": true,
+    "pixel_format_probe_contains_yuv420p": true,
+    "width": 640,
+    "height": 480,
+    "fps": 30.0,
+    "decoded_frames": 325,
+    "duration_seconds": 10.833333333333334,
+    "preview_frame": 200,
+    "preview_mean": 101.86578559027778,
+    "preview_std": 63.4216822503233,
+    "video_luminance_std": 0.6126697456324965,
+    "video_motion_mean": 2.0408274558738424,
+    "video_motion_max": 4.741106770833333
+  },
+  "attribution": {
+    "author": "Edcosys",
+    "dataset_doi": "10.17632/r3yjf35hzr.1"
+  },
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "frames_rendered": 325,
+    "wall_seconds": 8.801189100020565,
+    "pipeline_fps": 36.926828444038385
+  }
+}

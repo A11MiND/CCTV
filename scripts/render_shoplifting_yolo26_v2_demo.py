@@ -1,7 +1,8 @@
 """Render the opened-development YOLO26 + MViT + R3D18 shoplifting demo.
 
-This renderer is intentionally bound to one frozen test example and two
-existing prediction artifacts:
+The default render is bound to one frozen test example, while
+``--target-relative-path`` can render any aligned train, validation, or test
+example from the two existing prediction artifacts:
 
 * source: ``shoplifting/shoplifting-47.mp4`` (ground truth Shoplifting);
 * YOLO-person/bag-tube MViT video probability: 0.8370326757;
@@ -132,6 +133,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT)
     parser.add_argument(
+        "--target-relative-path",
+        default=TARGET_RELATIVE_PATH,
+        help="Dataset-relative key used to join the recorded prediction rows.",
+    )
+    parser.add_argument(
         "--mvit-predictions", type=Path, default=DEFAULT_MVIT_PREDICTIONS
     )
     parser.add_argument(
@@ -140,6 +146,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--yolo-model", type=Path, default=DEFAULT_YOLO_MODEL)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--preview", type=Path, default=DEFAULT_PREVIEW)
+    parser.add_argument(
+        "--summary",
+        type=Path,
+        help="Optional JSON file for render provenance, predictions, and QA.",
+    )
     parser.add_argument("--confidence", type=float, default=0.18)
     parser.add_argument("--iou", type=float, default=0.55)
     parser.add_argument("--imgsz", type=int, default=640)
@@ -170,23 +181,22 @@ def read_prediction_rows(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
-def find_target(rows: Sequence[dict[str, Any]], artifact: Path) -> dict[str, Any]:
+def find_target(
+    rows: Sequence[dict[str, Any]],
+    artifact: Path,
+    target_relative_path: str,
+) -> dict[str, Any]:
     matches = [
         row
         for row in rows
         if str(row.get("relative_path", "")).casefold()
-        == TARGET_RELATIVE_PATH.casefold()
+        == target_relative_path.casefold()
     ]
     if len(matches) != 1:
         raise RuntimeError(
-            f"Expected one {TARGET_RELATIVE_PATH} row in {artifact}; found {len(matches)}"
+            f"Expected one {target_relative_path} row in {artifact}; found {len(matches)}"
         )
-    row = matches[0]
-    if row.get("split") != "test":
-        raise RuntimeError(f"Target row is not test in {artifact}")
-    if int(row.get("ground_truth", -1)) != 1:
-        raise RuntimeError(f"Target ground truth is not Shoplifting in {artifact}")
-    return row
+    return matches[0]
 
 
 def binary_metrics(
@@ -218,11 +228,16 @@ def binary_metrics(
 def validate_prediction_bundle(
     mvit_path: Path,
     r3d_path: Path,
+    target_relative_path: str,
 ) -> PredictionBundle:
     mvit_rows = read_prediction_rows(mvit_path)
     r3d_rows = read_prediction_rows(r3d_path)
-    mvit_target = find_target(mvit_rows, mvit_path)
-    r3d_target = find_target(r3d_rows, r3d_path)
+    mvit_target = find_target(mvit_rows, mvit_path, target_relative_path)
+    r3d_target = find_target(r3d_rows, r3d_path, target_relative_path)
+    if int(mvit_target["ground_truth"]) != int(r3d_target["ground_truth"]):
+        raise RuntimeError(f"Target ground-truth mismatch for {target_relative_path}")
+    if str(mvit_target["split"]) != str(r3d_target["split"]):
+        raise RuntimeError(f"Target split mismatch for {target_relative_path}")
 
     mvit_test = {
         str(row["relative_path"]).casefold(): row
@@ -264,18 +279,19 @@ def validate_prediction_bundle(
                 f"Frozen final-ensemble {name} changed: {metrics[name]} != {value}"
             )
 
-    mvit_score = float(mvit_target["shoplifting_probability"])
-    r3d_score = float(r3d_target["shoplifting_probability"])
-    final_score = max(mvit_score, r3d_score)
-    for name, actual, expected_value in (
-        ("MViT", mvit_score, EXPECTED_MVIT_VIDEO_SCORE),
-        ("R3D18", r3d_score, EXPECTED_R3D_VIDEO_SCORE),
-        ("final", final_score, EXPECTED_FINAL_VIDEO_SCORE),
-    ):
-        if not math.isclose(actual, expected_value, abs_tol=1e-9):
-            raise RuntimeError(
-                f"Target {name} score changed: {actual} != {expected_value}"
-            )
+    if target_relative_path.casefold() == TARGET_RELATIVE_PATH.casefold():
+        mvit_score = float(mvit_target["shoplifting_probability"])
+        r3d_score = float(r3d_target["shoplifting_probability"])
+        final_score = max(mvit_score, r3d_score)
+        for name, actual, expected_value in (
+            ("MViT", mvit_score, EXPECTED_MVIT_VIDEO_SCORE),
+            ("R3D18", r3d_score, EXPECTED_R3D_VIDEO_SCORE),
+            ("final", final_score, EXPECTED_FINAL_VIDEO_SCORE),
+        ):
+            if not math.isclose(actual, expected_value, abs_tol=1e-9):
+                raise RuntimeError(
+                    f"Target {name} score changed: {actual} != {expected_value}"
+                )
     return PredictionBundle(mvit_target, r3d_target, metrics)
 
 
@@ -534,13 +550,35 @@ def draw_hud(
     cv2.rectangle(frame, (0, 0), (7, 151), TEAL, -1)
 
     font = cv2.FONT_HERSHEY_SIMPLEX
+    split_label = str(bundle.mvit_target["split"]).upper()
+    ground_truth = (
+        "Shoplifting" if int(bundle.mvit_target["ground_truth"]) == 1 else "Normal"
+    )
+    mvit_video_score = float(bundle.mvit_target["shoplifting_probability"])
+    r3d_video_score = float(bundle.r3d_target["shoplifting_probability"])
+    final_video_score = max(mvit_video_score, r3d_video_score)
+    predicted_name = "SHOPLIFTING" if final_video_score >= FIXED_THRESHOLD else "NORMAL"
+    decision = "ALERT" if final_video_score >= FIXED_THRESHOLD else "NO ALERT"
+    decision_color = FINAL_COLOR if decision == "ALERT" else GREEN
+
     cv2.putText(
         frame,
-        "SHOPLIFTING RISK DEMO | OPENED DEVELOPMENT TEST",
+        f"SHOPLIFTING RISK DEMO | {split_label} SPLIT",
         (16, 24),
         cv2.FONT_HERSHEY_DUPLEX,
         0.57,
         WHITE,
+        1,
+        cv2.LINE_AA,
+    )
+    cv2.rectangle(frame, (452, 5), (630, 31), decision_color, -1, cv2.LINE_AA)
+    cv2.putText(
+        frame,
+        f"{decision}: {predicted_name}",
+        (460, 23),
+        cv2.FONT_HERSHEY_DUPLEX,
+        0.43,
+        INK if decision == "ALERT" else WHITE,
         1,
         cv2.LINE_AA,
     )
@@ -552,17 +590,17 @@ def draw_hud(
         ),
         (
             "Full-frame + person/bag tube MViT",
-            f"dynamic {mvit_dynamic * 100:5.1f}% | video {EXPECTED_MVIT_VIDEO_SCORE * 100:4.1f}%",
+            f"dynamic {mvit_dynamic * 100:5.1f}% | video {mvit_video_score * 100:4.1f}%",
             MVIT_COLOR,
         ),
         (
             "R3D18 safety ensemble",
-            f"dynamic {r3d_dynamic * 100:5.1f}% | video {EXPECTED_R3D_VIDEO_SCORE * 100:4.1f}%",
+            f"dynamic {r3d_dynamic * 100:5.1f}% | video {r3d_video_score * 100:4.1f}%",
             R3D_COLOR,
         ),
         (
             "Final risk = max",
-            f"dynamic {final_dynamic * 100:5.1f}% | video {EXPECTED_FINAL_VIDEO_SCORE * 100:4.1f}%",
+            f"dynamic {final_dynamic * 100:5.1f}% | video {final_video_score * 100:4.1f}%",
             FINAL_COLOR,
         ),
     ]
@@ -575,10 +613,9 @@ def draw_hud(
     draw_risk_bar(frame, r3d_dynamic, 78, R3D_COLOR)
     draw_risk_bar(frame, final_dynamic, 102, FINAL_COLOR)
 
-    decision = "ALERT" if EXPECTED_FINAL_VIDEO_SCORE >= FIXED_THRESHOLD else "NORMAL"
     cv2.putText(
         frame,
-        f"Fixed threshold .50 | GT Shoplifting | Final decision {decision}",
+        f"Fixed threshold .50 | GT {ground_truth} | Model {decision}: {predicted_name}",
         (16, 143),
         font,
         0.42,
@@ -589,7 +626,7 @@ def draw_hud(
 
     cv2.putText(
         frame,
-        "TEST  accuracy 93.3%  |  balanced accuracy 90.0%  |  recall 100%",
+        "OPENED TEST  accuracy 93.3%  |  balanced accuracy 90.0%  |  recall 100%",
         (16, height - 46),
         cv2.FONT_HERSHEY_DUPLEX,
         0.46,
@@ -827,6 +864,8 @@ def validate_and_extract_preview(
     decoded_frames = 0
     preview_image: np.ndarray | None = None
     luminance_means: list[float] = []
+    motion_means: list[float] = []
+    previous_gray: np.ndarray | None = None
     while True:
         ok, frame = capture.read()
         if not ok:
@@ -838,6 +877,10 @@ def validate_and_extract_preview(
             capture.release()
             raise RuntimeError(f"Non-finite decoded frame at {decoded_frames}")
         luminance_means.append(float(frame.mean()))
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        if previous_gray is not None:
+            motion_means.append(float(cv2.absdiff(gray, previous_gray).mean()))
+        previous_gray = gray
         if decoded_frames == preview_frame:
             preview_image = frame.copy()
         decoded_frames += 1
@@ -852,7 +895,7 @@ def validate_and_extract_preview(
         raise RuntimeError(f"Output fps is {fps}")
     if preview_image is None:
         raise RuntimeError(f"Preview frame {preview_frame} is outside the output")
-    if statistics.pstdev(luminance_means) < 1.0:
+    if not motion_means or max(motion_means) < 0.5:
         raise RuntimeError("Decoded output appears visually static")
     preview.parent.mkdir(parents=True, exist_ok=True)
     if not cv2.imwrite(
@@ -871,6 +914,8 @@ def validate_and_extract_preview(
         "preview_mean": float(preview_image.mean()),
         "preview_std": float(preview_image.std()),
         "video_luminance_std": statistics.pstdev(luminance_means),
+        "video_motion_mean": statistics.fmean(motion_means),
+        "video_motion_max": max(motion_means),
     }
 
 
@@ -882,24 +927,32 @@ def main() -> int:
     args.yolo_model = args.yolo_model.resolve()
     args.output = args.output.resolve()
     args.preview = args.preview.resolve()
+    if args.summary is not None:
+        args.summary = args.summary.resolve()
     if not 0 < args.confidence <= 1:
         raise ValueError("--confidence must be in (0, 1]")
     if not 0 < args.iou <= 1:
         raise ValueError("--iou must be in (0, 1]")
-    if not 0 <= args.preview_frame < EXPECTED_FRAMES:
-        raise ValueError(f"--preview-frame must be in [0, {EXPECTED_FRAMES - 1}]")
     if not args.yolo_model.is_file():
         raise FileNotFoundError(args.yolo_model)
     if not torch.cuda.is_available():
         raise RuntimeError("The fixed demo renderer requires the local CUDA GPU")
 
     source_metadata = inspect_source(args.input)
+    if not 0 <= args.preview_frame < source_metadata["frames"]:
+        raise ValueError(
+            f"--preview-frame must be in [0, {source_metadata['frames'] - 1}]"
+        )
     bundle = validate_prediction_bundle(
-        args.mvit_predictions, args.r3d_predictions
+        args.mvit_predictions,
+        args.r3d_predictions,
+        args.target_relative_path,
     )
     timelines = interpolate_timelines(bundle, EXPECTED_FRAMES)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.preview.parent.mkdir(parents=True, exist_ok=True)
+    if args.summary is not None:
+        args.summary.parent.mkdir(parents=True, exist_ok=True)
 
     wall_start = time.perf_counter()
     temporary_root = ROOT / "tmp"
@@ -924,17 +977,28 @@ def main() -> int:
     elapsed = time.perf_counter() - wall_start
     summary = {
         "source": {
-            "relative_path": TARGET_RELATIVE_PATH,
+            "relative_path": args.target_relative_path,
             "sha256": sha256_file(args.input),
             **source_metadata,
-            "ground_truth": "Shoplifting",
-            "split": "test",
+            "ground_truth": (
+                "Shoplifting"
+                if int(bundle.mvit_target["ground_truth"]) == 1
+                else "Normal"
+            ),
+            "split": str(bundle.mvit_target["split"]),
         },
         "predictions": {
-            "mvit_video_probability": EXPECTED_MVIT_VIDEO_SCORE,
-            "r3d18_video_probability": EXPECTED_R3D_VIDEO_SCORE,
+            "mvit_video_probability": float(
+                bundle.mvit_target["shoplifting_probability"]
+            ),
+            "r3d18_video_probability": float(
+                bundle.r3d_target["shoplifting_probability"]
+            ),
             "final_rule": "max(MViT, R3D18)",
-            "final_video_probability": EXPECTED_FINAL_VIDEO_SCORE,
+            "final_video_probability": max(
+                float(bundle.mvit_target["shoplifting_probability"]),
+                float(bundle.r3d_target["shoplifting_probability"]),
+            ),
             "threshold": FIXED_THRESHOLD,
         },
         "test_metrics": bundle.ensemble_metrics,
@@ -973,7 +1037,10 @@ def main() -> int:
             "pipeline_fps": stats.frames_written / elapsed,
         },
     }
-    print(json.dumps(summary, indent=2, ensure_ascii=False))
+    summary_json = json.dumps(summary, indent=2, ensure_ascii=False)
+    if args.summary is not None:
+        args.summary.write_text(summary_json + "\n", encoding="utf-8")
+    print(summary_json)
     return 0
 
 
