@@ -438,7 +438,7 @@ Local demo assets:
 
 - H.264 result: [`../public/assets/video/yolo26-retail-demo.mp4`](../public/assets/video/yolo26-retail-demo.mp4)
 - Source preview: [`../assets/video/source-preview.jpg`](../assets/video/source-preview.jpg)
-- YOLO26 result preview: [`../assets/video/yolo26-preview.jpg`](../assets/video/yolo26-preview.jpg)
+- YOLO26 result preview: [`../public/assets/video/yolo26-preview.jpg`](../public/assets/video/yolo26-preview.jpg)
 - Machine-readable metrics: [`../assets/video/yolo26-run-metrics.json`](../assets/video/yolo26-run-metrics.json)
 - Reproducible script: [`../scripts/run_yolo_retail_demo.py`](../scripts/run_yolo_retail_demo.py)
 

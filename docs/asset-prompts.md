@@ -23,8 +23,7 @@ Author: Edcosys
 
 - `design/ui-concept-live.png`
 - `design/ui-concept-review.png`
-- `assets/cctv/aisle-event.png`
-- `assets/cctv/entrance.png`
-- `assets/cctv/checkout.png`
-- `assets/cctv/drinks.png`
-
+- `public/assets/cctv/aisle-event.png`
+- `public/assets/cctv/entrance.png`
+- `public/assets/cctv/checkout.png`
+- `public/assets/cctv/drinks.png`

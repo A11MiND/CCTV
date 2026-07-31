@@ -53,7 +53,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--preview",
         type=Path,
-        default=WORKSPACE / "assets/video/yolo26-preview.jpg",
+        default=WORKSPACE / "public/assets/video/yolo26-preview.jpg",
     )
     parser.add_argument(
         "--model",
