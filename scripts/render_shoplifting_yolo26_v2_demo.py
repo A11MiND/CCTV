@@ -334,11 +334,13 @@ def interpolate_timelines(
     mvit_scores = np.asarray(
         bundle.mvit_target["clip_shoplifting_probabilities"], dtype=np.float64
     )
+    clip_span = (clip_length - 1) * frame_stride
     mvit_centers = np.clip(
-        mvit_starts + ((clip_length - 1) * frame_stride) / 2.0,
+        mvit_starts + clip_span / 2.0,
         0,
         frame_count - 1,
     )
+    mvit_available = np.clip(mvit_starts + clip_span, 0, frame_count - 1)
     r3d_fractions = np.asarray(
         bundle.r3d_target["clip_center_fractions"], dtype=np.float64
     )
@@ -350,23 +352,43 @@ def interpolate_timelines(
         raise RuntimeError("MViT clip timeline length mismatch")
     if r3d_centers.size != r3d_scores.size:
         raise RuntimeError("R3D18 clip timeline length mismatch")
-    mvit_dynamic = np.interp(frames, mvit_centers, mvit_scores)
-    r3d_dynamic = np.interp(frames, r3d_centers, r3d_scores)
+    max_start = max(0, frame_count - 1 - clip_span)
+    r3d_starts = np.clip(np.rint(r3d_centers) - clip_span // 2, 0, max_start)
+    r3d_available = np.clip(r3d_starts + clip_span, 0, frame_count - 1)
+
+    def causal_hold(
+        available_frames: np.ndarray, scores: np.ndarray
+    ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+        latest = np.searchsorted(available_frames, frames, side="right") - 1
+        ready = latest >= 0
+        values = np.zeros(frame_count, dtype=np.float64)
+        values[ready] = scores[latest[ready]]
+        return values, ready, latest
+
+    mvit_dynamic, mvit_ready, mvit_latest = causal_hold(
+        mvit_available, mvit_scores
+    )
+    r3d_dynamic, r3d_ready, _ = causal_hold(r3d_available, r3d_scores)
     final_dynamic = np.maximum(mvit_dynamic, r3d_dynamic)
+    analysis_ready = np.logical_or(mvit_ready, r3d_ready)
 
     crop_boxes = np.asarray(bundle.mvit_target["crop_boxes_xyxy"], dtype=np.float64)
     if crop_boxes.shape != (mvit_centers.size, 4):
         raise RuntimeError(f"Unexpected crop-box shape: {crop_boxes.shape}")
-    interpolated_boxes = np.column_stack(
-        [np.interp(frames, mvit_centers, crop_boxes[:, index]) for index in range(4)]
-    )
+    interpolated_boxes = np.zeros((frame_count, 4), dtype=np.float64)
+    interpolated_boxes[mvit_ready] = crop_boxes[mvit_latest[mvit_ready]]
     person_found = np.asarray(bundle.mvit_target["person_found"], dtype=bool)
-    nearest_indices = np.abs(frames[:, None] - mvit_centers[None, :]).argmin(axis=1)
-    tube_visible = person_found[nearest_indices]
+    tube_visible = np.zeros(frame_count, dtype=bool)
+    tube_visible[mvit_ready] = person_found[mvit_latest[mvit_ready]]
     return {
         "mvit": mvit_dynamic,
         "r3d": r3d_dynamic,
         "final": final_dynamic,
+        "mvit_ready": mvit_ready,
+        "r3d_ready": r3d_ready,
+        "analysis_ready": analysis_ready,
+        "mvit_available_frames": mvit_available,
+        "r3d_available_frames": r3d_available,
         "tube_boxes": interpolated_boxes,
         "tube_visible": tube_visible,
     }
@@ -540,6 +562,9 @@ def draw_hud(
     mvit_dynamic: float,
     r3d_dynamic: float,
     final_dynamic: float,
+    mvit_ready: bool,
+    r3d_ready: bool,
+    analysis_ready: bool,
     bundle: PredictionBundle,
 ) -> None:
     height, width = frame.shape[:2]
@@ -551,15 +576,21 @@ def draw_hud(
 
     font = cv2.FONT_HERSHEY_SIMPLEX
     split_label = str(bundle.mvit_target["split"]).upper()
-    ground_truth = (
-        "Shoplifting" if int(bundle.mvit_target["ground_truth"]) == 1 else "Normal"
-    )
-    mvit_video_score = float(bundle.mvit_target["shoplifting_probability"])
-    r3d_video_score = float(bundle.r3d_target["shoplifting_probability"])
-    final_video_score = max(mvit_video_score, r3d_video_score)
-    predicted_name = "SHOPLIFTING" if final_video_score >= FIXED_THRESHOLD else "NORMAL"
-    decision = "ALERT" if final_video_score >= FIXED_THRESHOLD else "NO ALERT"
-    decision_color = FINAL_COLOR if decision == "ALERT" else GREEN
+    if not analysis_ready:
+        badge_text = "ANALYZING"
+        state_text = "WARM-UP"
+        decision_color = MVIT_COLOR
+        badge_ink = INK
+    elif final_dynamic >= FIXED_THRESHOLD:
+        badge_text = "ALERT: SHOPLIFTING"
+        state_text = "ALERT: SHOPLIFTING"
+        decision_color = FINAL_COLOR
+        badge_ink = INK
+    else:
+        badge_text = "MONITORING: NORMAL"
+        state_text = "MONITORING: NORMAL"
+        decision_color = GREEN
+        badge_ink = WHITE
 
     cv2.putText(
         frame,
@@ -574,11 +605,11 @@ def draw_hud(
     cv2.rectangle(frame, (452, 5), (630, 31), decision_color, -1, cv2.LINE_AA)
     cv2.putText(
         frame,
-        f"{decision}: {predicted_name}",
+        badge_text,
         (460, 23),
         cv2.FONT_HERSHEY_DUPLEX,
         0.43,
-        INK if decision == "ALERT" else WHITE,
+        badge_ink,
         1,
         cv2.LINE_AA,
     )
@@ -590,17 +621,17 @@ def draw_hud(
         ),
         (
             "Full-frame + person/bag tube MViT",
-            f"dynamic {mvit_dynamic * 100:5.1f}% | video {mvit_video_score * 100:4.1f}%",
+            f"live {mvit_dynamic * 100:5.1f}%" if mvit_ready else "waiting for window",
             MVIT_COLOR,
         ),
         (
             "R3D18 safety ensemble",
-            f"dynamic {r3d_dynamic * 100:5.1f}% | video {r3d_video_score * 100:4.1f}%",
+            f"live {r3d_dynamic * 100:5.1f}%" if r3d_ready else "waiting for window",
             R3D_COLOR,
         ),
         (
-            "Final risk = max",
-            f"dynamic {final_dynamic * 100:5.1f}% | video {final_video_score * 100:4.1f}%",
+            "Causal live risk = max",
+            f"live {final_dynamic * 100:5.1f}%" if analysis_ready else "pending",
             FINAL_COLOR,
         ),
     ]
@@ -615,7 +646,7 @@ def draw_hud(
 
     cv2.putText(
         frame,
-        f"Fixed threshold .50 | GT {ground_truth} | Model {decision}: {predicted_name}",
+        f"Past frames only | threshold .50 | state {state_text}",
         (16, 143),
         font,
         0.42,
@@ -759,6 +790,9 @@ def render_intermediate(
                 float(timelines["mvit"][frame_index]),
                 float(timelines["r3d"][frame_index]),
                 float(timelines["final"][frame_index]),
+                bool(timelines["mvit_ready"][frame_index]),
+                bool(timelines["r3d_ready"][frame_index]),
+                bool(timelines["analysis_ready"][frame_index]),
                 bundle,
             )
             writer.write(frame)
@@ -949,6 +983,13 @@ def main() -> int:
         args.target_relative_path,
     )
     timelines = interpolate_timelines(bundle, EXPECTED_FRAMES)
+    alert_frames = np.flatnonzero(
+        np.logical_and(
+            timelines["analysis_ready"],
+            timelines["final"] >= FIXED_THRESHOLD,
+        )
+    )
+    first_alert_frame = int(alert_frames[0]) if alert_frames.size else None
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.preview.parent.mkdir(parents=True, exist_ok=True)
     if args.summary is not None:
@@ -1000,6 +1041,23 @@ def main() -> int:
                 float(bundle.r3d_target["shoplifting_probability"]),
             ),
             "threshold": FIXED_THRESHOLD,
+        },
+        "causal_display": {
+            "mode": "online past-frames-only",
+            "interpolation": "latest fully observed window held until next result",
+            "warmup_frames": int(
+                min(
+                    timelines["mvit_available_frames"][0],
+                    timelines["r3d_available_frames"][0],
+                )
+            ),
+            "first_alert_frame": first_alert_frame,
+            "first_alert_seconds": (
+                first_alert_frame / EXPECTED_FPS
+                if first_alert_frame is not None
+                else None
+            ),
+            "uses_full_video_score_in_live_hud": False,
         },
         "test_metrics": bundle.ensemble_metrics,
         "perception": {

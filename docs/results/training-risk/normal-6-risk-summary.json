@@ -16,6 +16,14 @@
     "final_video_probability": 0.04764728248119354,
     "threshold": 0.5
   },
+  "causal_display": {
+    "mode": "online past-frames-only",
+    "interpolation": "latest fully observed window held until next result",
+    "warmup_frames": 60,
+    "first_alert_frame": null,
+    "first_alert_seconds": null,
+    "uses_full_video_score_in_live_hud": false
+  },
   "test_metrics": {
     "support": 30,
     "tn": 8,
@@ -43,16 +51,16 @@
     "bag_track_ids": 0,
     "mean_people_per_frame": 2.0,
     "mean_bags_per_frame": 0.0,
-    "inference_ms_mean": 19.241927692380088,
-    "inference_ms_p95": 20.750300015788525
+    "inference_ms_mean": 24.943200309151926,
+    "inference_ms_p95": 28.76026002923027
   },
   "output": {
     "video": "public\\assets\\video\\training-risk\\normal-6-risk.mp4",
-    "video_sha256": "244ae258a9960adbb257e08e890075db4b27314e78ad87a9864269ded24916c7",
-    "video_bytes": 1359680,
+    "video_sha256": "cfa1febca194702f7eaf9da370ad4835a2c7667d5c55dcc7bd196fe1a824b719",
+    "video_bytes": 1214786,
     "preview": "docs\\results\\training-risk\\normal-6-risk-preview.jpg",
-    "preview_sha256": "1400decb171fc6a3fb1a9c3582fad7d65b323ceae4915c4efe6b7bfa22b87fe4",
-    "preview_bytes": 96525,
+    "preview_sha256": "596c463aa3812fe6f724764f8265e92ace3b73b3c53913e1abc287b1cd43b04c",
+    "preview_bytes": 94868,
     "encoding": "H.264 yuv420p",
     "codec_probe_contains_h264": true,
     "pixel_format_probe_contains_yuv420p": true,
@@ -62,11 +70,11 @@
     "decoded_frames": 325,
     "duration_seconds": 10.833333333333334,
     "preview_frame": 200,
-    "preview_mean": 91.28597005208333,
-    "preview_std": 54.965201276240634,
-    "video_luminance_std": 0.28357175258715606,
-    "video_motion_mean": 0.7922654039673354,
-    "video_motion_max": 2.81111328125
+    "preview_mean": 91.13318033854166,
+    "preview_std": 54.98050035662134,
+    "video_luminance_std": 0.3478173072763184,
+    "video_motion_mean": 0.717184757185571,
+    "video_motion_max": 2.9792936197916666
   },
   "attribution": {
     "author": "Edcosys",
@@ -75,7 +83,7 @@
   "runtime": {
     "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
     "frames_rendered": 325,
-    "wall_seconds": 9.424282799998764,
-    "pipeline_fps": 34.48538280282109
+    "wall_seconds": 11.478061600006185,
+    "pipeline_fps": 28.314885502951547
   }
 }

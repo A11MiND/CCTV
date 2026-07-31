@@ -112,9 +112,11 @@ See
 [`docs/results/shoplifting-yolo26-v2/BENCHMARK.md`](docs/results/shoplifting-yolo26-v2/BENCHMARK.md)
 for component metrics, uncertainty, provenance, and per-video predictions.
 
-Three training-split examples show the complete decision overlay: YOLO26 and
-ByteTrack perception, temporal-model probabilities, the fixed 0.50 threshold,
-ground truth, and the final `ALERT: SHOPLIFTING` or `NO ALERT: NORMAL` result.
+Four training-split examples show the complete decision overlay: YOLO26 and
+ByteTrack perception, causal past-frames-only temporal probabilities, the
+fixed 0.50 threshold, and the live alert state. The representative
+`shoplifting-19-causal-risk.mp4` stays normal until the pocket action and first
+alerts at 5.67 seconds.
 See [`docs/results/training-risk/README.md`](docs/results/training-risk/README.md).
 
 Reproduce the pipeline after placing the dataset under

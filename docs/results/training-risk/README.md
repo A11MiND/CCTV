@@ -2,20 +2,32 @@
 
 Author: Edcosys
 
-These videos demonstrate the complete inference display on three clips from
+These videos demonstrate the complete inference display on four clips from
 the public Shoplifting Dataset training split. YOLO26s and ByteTrack provide
 person and bag perception. The temporal decision combines a full-frame plus
 person/bag-tube MViT score with an R3D-18 safety score:
 
 `final risk = max(YOLO26-MViT, R3D-18)`
 
-The fixed alert threshold is 0.50.
+The fixed alert threshold is 0.50. The live HUD is causal: a window score is
+shown only after every frame in that window has been observed. The latest
+completed-window score is held until the next result. Full-video aggregation
+is recorded in the JSON report and is never inserted into earlier HUD frames.
 
-| Video | Ground truth | YOLO26-MViT | R3D-18 | Final risk | Displayed decision |
-|---|---|---:|---:|---:|---|
-| `shoplifting-8-risk.mp4` | Shoplifting | 94.49% | 93.08% | **94.49%** | **ALERT: SHOPLIFTING** |
-| `normal-6-risk.mp4` | Normal | 4.76% | 2.94% | **4.76%** | **NO ALERT: NORMAL** |
-| `shoplifting-1-risk.mp4` | Shoplifting | 93.85% | 91.52% | **93.85%** | **ALERT: SHOPLIFTING** |
+| Video | Ground truth | Full-video risk | First live alert | Displayed result |
+|---|---|---:|---:|---|
+| `shoplifting-19-causal-risk.mp4` | Shoplifting | **90.65%** | **5.67 s** | Normal monitoring, then alert during the pocket action |
+| `shoplifting-8-risk.mp4` | Shoplifting | **94.49%** | 2.00 s | Clip begins during suspicious handling; alert after first window |
+| `normal-6-risk.mp4` | Normal | **4.76%** | None | Monitoring remains normal |
+| `shoplifting-1-risk.mp4` | Shoplifting | **93.85%** | 2.00 s | Alert after first completed window |
+
+Before the action threshold (frame 160, 5.33 seconds):
+
+![Causal monitoring before alert](shoplifting-19-causal-prealert.jpg)
+
+After the next completed temporal window (frame 190, 6.33 seconds):
+
+![Causal shoplifting alert](shoplifting-19-causal-preview.jpg)
 
 ## Files
 
@@ -31,7 +43,7 @@ summary.
 
 ## Evaluation context
 
-These three clips belong to the training split. Their probabilities show what
+These four clips belong to the training split. Their probabilities show what
 the trained system displays on selected examples; they are not independent
 accuracy measurements. The separate opened 30-video test benchmark achieved
 93.3% accuracy, 90.0% balanced accuracy, and 100.0% recall at the same fixed

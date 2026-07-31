@@ -25,6 +25,7 @@ The derived clip demonstrates YOLO26s person detection and ByteTrack tracking. T
   - `public/assets/video/training-boxed/normal-6-yolo26.mp4`
   - `public/assets/video/training-boxed/shoplifting-1-yolo26.mp4`
 - Complete shoplifting-decision training videos:
+  - `public/assets/video/training-risk/shoplifting-19-causal-risk.mp4`
   - `public/assets/video/training-risk/shoplifting-8-risk.mp4`
   - `public/assets/video/training-risk/normal-6-risk.mp4`
   - `public/assets/video/training-risk/shoplifting-1-risk.mp4`
@@ -43,8 +44,9 @@ YOLO26s person boxes, ByteTrack IDs, trajectories, measured GPU latency, and
 dataset attribution. Detailed runtime results and previews are in
 `docs/results/training-boxed/`.
 
-The decision videos add the YOLO26-MViT and R3D-18 temporal scores, the fixed
-0.50 threshold, ground truth, and a prominent final alert state. They are
-training-split demonstrations; the separate 30-video opened-test result is
-shown only as benchmark context. Detailed results are in
+The decision videos add causal YOLO26-MViT and R3D-18 temporal scores, the
+fixed 0.50 threshold, and a prominent live alert state. The HUD uses only
+fully observed windows and never displays the full-video score in earlier
+frames. They are training-split demonstrations; the separate 30-video
+opened-test result is shown only as benchmark context. Detailed results are in
 `docs/results/training-risk/`.

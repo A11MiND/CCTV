@@ -1,7 +1,7 @@
 {
   "source": {
-    "relative_path": "shoplifting/shoplifting-1.mp4",
-    "sha256": "7080bb7bbe972187d587b32f1780b1d29953dbfd24e16f58bc461ebf036c7c91",
+    "relative_path": "shoplifting/shoplifting-19.mp4",
+    "sha256": "bcd50e94d99ef1f4e3fe1ba92b39f9ca2581ade8a71e40f034904e694d2e69b8",
     "width": 640,
     "height": 480,
     "fps": 30.0,
@@ -10,18 +10,18 @@
     "split": "train"
   },
   "predictions": {
-    "mvit_video_probability": 0.9385135769844055,
-    "r3d18_video_probability": 0.915213942527771,
+    "mvit_video_probability": 0.9048568606376648,
+    "r3d18_video_probability": 0.9064816236495972,
     "final_rule": "max(MViT, R3D18)",
-    "final_video_probability": 0.9385135769844055,
+    "final_video_probability": 0.9064816236495972,
     "threshold": 0.5
   },
   "causal_display": {
     "mode": "online past-frames-only",
     "interpolation": "latest fully observed window held until next result",
     "warmup_frames": 60,
-    "first_alert_frame": 60,
-    "first_alert_seconds": 2.0,
+    "first_alert_frame": 170,
+    "first_alert_seconds": 5.666666666666667,
     "uses_full_video_score_in_live_hud": false
   },
   "test_metrics": {
@@ -47,20 +47,20 @@
     ],
     "confidence": 0.18,
     "iou": 0.55,
-    "person_track_ids": 2,
+    "person_track_ids": 3,
     "bag_track_ids": 0,
-    "mean_people_per_frame": 2.0,
+    "mean_people_per_frame": 2.0246153846153847,
     "mean_bags_per_frame": 0.0,
-    "inference_ms_mean": 24.96879569451826,
-    "inference_ms_p95": 29.04148000525311
+    "inference_ms_mean": 14.405895076656284,
+    "inference_ms_p95": 13.719399983529001
   },
   "output": {
-    "video": "public\\assets\\video\\training-risk\\shoplifting-1-risk.mp4",
-    "video_sha256": "11198d2a8405ac25c53bba2ea5f95d66e9eaba21e3ca35a4d92a5f3732eca27a",
-    "video_bytes": 1445560,
-    "preview": "docs\\results\\training-risk\\shoplifting-1-risk-preview.jpg",
-    "preview_sha256": "21153aeeb8e325829ee4ad9feed2a07f5812f98294159ebf6d59fa8f3d54c37e",
-    "preview_bytes": 101757,
+    "video": "public\\assets\\video\\training-risk\\shoplifting-19-causal-risk.mp4",
+    "video_sha256": "c34c3beee2887d089f99fa8f3e5cbc549ada1d8f7675664ed881e283dc699a71",
+    "video_bytes": 1873483,
+    "preview": "docs\\results\\training-risk\\shoplifting-19-causal-preview.jpg",
+    "preview_sha256": "2ef3808482b0525e750addf7d24bdb63a1a11bdcceb6a17fab902d15091263a3",
+    "preview_bytes": 103147,
     "encoding": "H.264 yuv420p",
     "codec_probe_contains_h264": true,
     "pixel_format_probe_contains_yuv420p": true,
@@ -69,12 +69,12 @@
     "fps": 30.0,
     "decoded_frames": 325,
     "duration_seconds": 10.833333333333334,
-    "preview_frame": 200,
-    "preview_mean": 90.699443359375,
-    "preview_std": 56.025480555532454,
-    "video_luminance_std": 0.5189889322271426,
-    "video_motion_mean": 0.960439583735211,
-    "video_motion_max": 6.1096419270833335
+    "preview_frame": 190,
+    "preview_mean": 89.75016493055556,
+    "preview_std": 55.40458322968184,
+    "video_luminance_std": 0.37597949154151644,
+    "video_motion_mean": 1.2440251957143775,
+    "video_motion_max": 4.2018033854166665
   },
   "attribution": {
     "author": "Edcosys",
@@ -83,7 +83,7 @@
   "runtime": {
     "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
     "frames_rendered": 325,
-    "wall_seconds": 11.578711599984672,
-    "pipeline_fps": 28.068753349071258
+    "wall_seconds": 7.487606999988202,
+    "pipeline_fps": 43.405055847684324
   }
 }

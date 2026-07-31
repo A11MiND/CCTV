@@ -16,6 +16,14 @@
     "final_video_probability": 0.94488924741745,
     "threshold": 0.5
   },
+  "causal_display": {
+    "mode": "online past-frames-only",
+    "interpolation": "latest fully observed window held until next result",
+    "warmup_frames": 60,
+    "first_alert_frame": 60,
+    "first_alert_seconds": 2.0,
+    "uses_full_video_score_in_live_hud": false
+  },
   "test_metrics": {
     "support": 30,
     "tn": 8,
@@ -43,16 +51,16 @@
     "bag_track_ids": 4,
     "mean_people_per_frame": 1.0184615384615385,
     "mean_bags_per_frame": 1.123076923076923,
-    "inference_ms_mean": 16.697430461286924,
-    "inference_ms_p95": 17.28023998439312
+    "inference_ms_mean": 24.87303907553164,
+    "inference_ms_p95": 31.22633994789794
   },
   "output": {
     "video": "public\\assets\\video\\training-risk\\shoplifting-8-risk.mp4",
-    "video_sha256": "043137b49e70037d0a9920ec8b5dd6ee552be8734be92e2603648f307554e834",
-    "video_bytes": 2145214,
+    "video_sha256": "53496e1d055a3035466baea6030fc4ebe1fa917f4f83232af9de8910ea19c5fe",
+    "video_bytes": 2041706,
     "preview": "docs\\results\\training-risk\\shoplifting-8-risk-preview.jpg",
-    "preview_sha256": "a11ad641ed2fc46351f79e8af02b229041117b6eeae9b0afe268adf5c12a921d",
-    "preview_bytes": 107484,
+    "preview_sha256": "296d8c633b8d62c571006f6f28d4a481788e6c0560ad11dc26e5bc0e69057c18",
+    "preview_bytes": 104446,
     "encoding": "H.264 yuv420p",
     "codec_probe_contains_h264": true,
     "pixel_format_probe_contains_yuv420p": true,
@@ -62,11 +70,11 @@
     "decoded_frames": 325,
     "duration_seconds": 10.833333333333334,
     "preview_frame": 200,
-    "preview_mean": 101.86578559027778,
-    "preview_std": 63.4216822503233,
-    "video_luminance_std": 0.6126697456324965,
-    "video_motion_mean": 2.0408274558738424,
-    "video_motion_max": 4.741106770833333
+    "preview_mean": 101.53629448784723,
+    "preview_std": 63.360458298261285,
+    "video_luminance_std": 0.7117691021739975,
+    "video_motion_mean": 1.968653710133745,
+    "video_motion_max": 4.525950520833334
   },
   "attribution": {
     "author": "Edcosys",
@@ -75,7 +83,7 @@
   "runtime": {
     "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
     "frames_rendered": 325,
-    "wall_seconds": 8.801189100020565,
-    "pipeline_fps": 36.926828444038385
+    "wall_seconds": 11.773722999962047,
+    "pipeline_fps": 27.603842896681673
   }
 }
